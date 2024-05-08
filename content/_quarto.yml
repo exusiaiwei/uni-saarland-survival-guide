@@ -1,0 +1,23 @@
+project:
+  type: book
+
+book:
+  title: "content"
+  author: "Norah Jones"
+  date: "2024/5/8"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+
