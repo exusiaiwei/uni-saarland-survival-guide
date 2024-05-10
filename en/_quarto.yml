@@ -8,8 +8,18 @@ book:
   date: "2024/5/8"
   chapters:
     - index.qmd
+  navbar:
+    background: primary
+    right:
+      - icon: globe
+        menu:
+          - text: English
+            href: https://academic.exusiaiwei.top/uni-saarland-survival-guide/en/
+          - text: 中文
+            href: https://academic.exusiaiwei.top/uni-saarland-survival-guide/zh/
 
 format:
   html:
-    theme: cosmo
+    theme: journal
+    code-copy: true
     toc: true
