@@ -1,5 +1,6 @@
 project:
   type: book
+  output-dir: _site
 
 book:
   title: "萨尔大学生存指南"
@@ -7,15 +8,8 @@ book:
   date: "2024/5/8"
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
-
-bibliography: references.bib
 
 format:
   html:
     theme: cosmo
-  typst:
     toc: true
-    section-numbering: 1.1.a
