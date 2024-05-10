@@ -28,7 +28,7 @@ jobs:
 
       - name: Install R dependencies
         run: |
-          install.packages(c("tidyverse", "knitr"))
+          Rscript -e 'install.packages(c("tidyverse", "knitr"))'
 
       - name: Check out repository
         uses: actions/checkout@v4
