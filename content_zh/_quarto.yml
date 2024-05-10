@@ -2,7 +2,7 @@ project:
   type: book
 
 book:
-  title: "Uni-Saarland Survival Guide"
+  title: "萨尔大学生存指南"
   author: "Norah Jones"
   date: "2024/5/8"
   chapters:
