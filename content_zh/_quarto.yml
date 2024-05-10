@@ -16,5 +16,6 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
-  pdf:
-    documentclass: scrreprt
+  typst:
+    toc: true
+    section-numbering: 1.1.a
