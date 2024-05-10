@@ -8,6 +8,14 @@ book:
   date: "2024/5/8"
   chapters:
     - index.qmd
+  favicon: https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg
+  cover-image: https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg
+  repo-url: https://github.com/exusiaiwei/uni-saarland-survival-guide
+  repo-actions: [edit]
+  search: true
+  sidebar:
+    style: docked
+    background: light
   navbar:
     background: primary
     right:
