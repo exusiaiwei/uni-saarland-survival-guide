@@ -3,7 +3,7 @@ project:
 
 book:
   title: "萨尔大学生存指南"
-  author: "Norah Jones"
+  author: "魏子超"
   date: "2024/5/8"
   chapters:
     - index.qmd

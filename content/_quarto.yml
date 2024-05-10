@@ -3,7 +3,7 @@ project:
 
 book:
   title: "Uni-Saarland Survival Guide"
-  author: "Norah Jones"
+  author: "Zichao Wei"
   date: "2024/5/8"
   chapters:
     - index.qmd
