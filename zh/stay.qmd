@@ -1,24 +1,59 @@
 # 住宿
 
 ```{python}
+#| echo: false
 import folium
 
+# 宿舍的信息
+dormitories = [
+    {"name": "Wohnheime E", "location": (49.257400, 7.041500), "type": "university", "icon": "https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg"},
+    {"name": "Studentenwohnanlage Waldhaus", "location": (49.244890, 7.021330), "type": "university", "icon": "https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg"},
+    {"name": "Studentenwohnheim Guckelsberg", "location": (49.265390, 7.040530), "type": "university", "icon": "https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg"},
+    {"name": "Studentenwohnheim Rotenberg", "location": (49.235740, 7.001840), "type": "university", "icon": "https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg"}
+]
+
+# 学校的坐标
+school_location = (49.2554, 7.0419)
+
 # 创建地图,以学校的坐标为中心
-map = folium.Map(location=[49.2554, 7.0419], zoom_start=14)
+map = folium.Map(location=school_location, zoom_start=14)
 
-# 添加标记
-folium.Marker(
-    location=[49.2600, 7.0450],
-    popup=folium.Popup(html='<a href="dorm1.html">Dormitory 1</a>', max_width=200),
-    tooltip='Click for more information'
-).add_to(map)
-
-folium.Marker(
-    location=[49.2550, 7.0400],
-    popup=folium.Popup(html='<a href="dorm2.html">Dormitory 2</a>', max_width=200),
-    tooltip='Click for more information'
-).add_to(map)
+# 添加标记和线路
+for dormitory in dormitories:
+    # 添加标记
+    folium.Marker(
+        location=dormitory["location"],
+        popup=folium.Popup(html=dormitory["name"], max_width=200),
+        tooltip='Click for more information',
+        icon=folium.features.CustomIcon(dormitory["icon"], icon_size=(50, 50))
+    ).add_to(map)
 
 # 显示地图
 map
 ```
+
+
+## 住房列表
+### 大学管理的学生公寓 {#tbl-dormitory}
+
+在线申请地址：https://tl1host.eu/SWSB/#home
+
+| 宿舍名称  | 房型 | 租金范围 |
+|----------|------|----------|
+| [Wohnheime E](http://www.heim-e.uni-sb.de/) | 72间单人宿舍,面积约20m² | 均价327€,水电暖多退少补 |
+| [Studentenwohnanlage Waldhaus](https://waldhaus-sb.de/) | 245间单人公寓,17间双人间,14间家庭房 | 根据房型,270~799€不等 |
+| [Studentenwohnheim Guckelsberg](http://www.wohnheim-guckelsberg.de) | 46间单人房,66间双人房,2间家庭房 | 根据房型,215~672€不等 |
+| [Studentenwohnheim Rotenberg](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Rotenbergstrasse) | 45间单人公寓,5间双人房,1间家庭房 | 根据房型,252~334€不等 |
+
+
+> **目前学生宿舍没有空房！**
+>
+> Derzeit sind keine freien Zimmer in den Wohnheimen verfügbar!
+>
+> ——Wohnen im Wohnheim
+
+
+
+### 私人运营的学生公寓
+
+### 私人住宅
