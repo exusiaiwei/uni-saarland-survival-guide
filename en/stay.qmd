@@ -1,0 +1,158 @@
+# Accommodation
+
+```{python}
+#| echo: false
+import folium
+from folium.features import CustomIcon
+
+# Dormitory information
+dormitories = [
+    {"name": "Wohnheime E", "location": (49.257400, 7.041500), "type": "university", "color": "darkblue", "icon": "university"},
+    {"name": "Studentenwohnanlage Waldhaus", "location": (49.244890, 7.021330), "type": "university", "color": "darkblue", "icon": "university"},
+    {"name": "Studentenwohnheim Guckelsberg", "location": (49.265390, 7.040530), "type": "university", "color": "darkblue", "icon": "university"},
+    {"name": "Studentenwohnheim Rotenberg", "location": (49.235740, 7.001840), "type": "university", "color": "darkblue", "icon": "university"},
+    {"name": "TILSITER STRASSE", "location": (49.23601787263703, 7.048907284661837), "type": "private", "color": "cadetblue", "icon": "building"},
+    {"name": "Carl Duisberg Haus", "location": (49.23835064843005, 7.036376055826561), "type": "private", "color": "cadetblue", "icon": "building"},
+    {"name": "ESG Saarbrücken", "location": (49.24468732847097, 7.018832677740648), "type": "other", "color": "cadetblue", "icon": "building"},
+    {"name": "Cusanushaus Saarbrücken", "location": (49.2356132668547, 6.990818476723417), "type": "other", "color": "cadetblue", "icon": "building"},
+    {"name": "CAMPO NOVO Saarbrücken", "location": (49.24218686964247, 7.007729411047266), "type": "private", "color": "cadetblue", "icon": "building"},
+    {"name": "Quint Immobilien GmbH", "location": (49.27712239030715, 7.034571602702453), "type": "private", "color": "cadetblue", "icon": "building"},
+    {"name": "Zymma", "location": (49.231796028851136, 7.006448137049002), "type": "other", "color": "cadetblue", "icon": "building"},
+    {"name": "WOGE Saar", "location": (49.23176489619987, 6.999792006811255), "type": "other", "color": "cadetblue", "icon": "building"}
+]
+
+# School coordinates
+school_location = (49.2554, 7.0419)
+
+# Create map centered on school coordinates
+map = folium.Map(location=school_location, zoom_start=12)
+
+# Add markers
+for dormitory in dormitories:
+    icon = folium.Icon(color=dormitory["color"], icon=dormitory["icon"], prefix='fa')
+    folium.Marker(
+        location=dormitory["location"],
+        popup=folium.Popup(html=dormitory["name"], max_width=200),
+        tooltip='Click for more information',
+        icon=icon
+    ).add_to(map)
+
+# Display map
+map
+```
+
+
+## Housing List
+@tbl-overview provides an overview.
+
+| Dormitory Name | Type | Room Type | Monthly Rent Range |
+|----------|------|------|------------|
+| Studentenwohnheim E (Student Dormitory E) | University Dormitory | Single Apartment (72 rooms) | 350€, including utilities |
+| Studentenwohnheim Waldhaus (Waldhaus Student Dormitory) | University Dormitory | Single Apartment (254 rooms), Double Room (17 rooms), Family Apartment (14 rooms) | 293€ - 839€ |
+| Studentenwohnheim Guckelsberg (Guckelsberg Student Dormitory) | University Dormitory | Single Apartment (46 rooms), Double Apartment (66 rooms), Family Apartment (2 rooms) | 239€ - 712€ |
+| Studentenwohnheim Rotenberg (Rotenberg Student Dormitory) | University Dormitory | Single Apartment (45 rooms), Double Room (5 rooms), Triple Room (1 room) | 275€ - 357€ |
+| TILSITER STRASSE Shared Apartment | Private Dormitory | Single Room | 310€ - 400€ |
+| CARL-DUISBERG-HAUS | Private Dormitory | Single Room, Single Apartment | 400€ - 430€ |
+| ESG-WOHNHEIM ESG Student Apartment | Private Dormitory | Single Room, Double Room | 277€ - 466€ |
+| CUSANUSHAUS | Private Dormitory | Class A Single Room, Class B Single Room, Class C Single Apartment | 290€ - 410€ |
+| CAMPO NOVO | Private Dormitory | Single Room (Student), Two-Room (Student), Two-Room (Student Shared), Two-Room (Business), Two-Room Duplex (Business) | 545€ - 1160€ |
+| Quint Immobilien | Private Dormitory | - | - |
+| Zymma | Private Dormitory | - | - |
+| WOGE Saar | Private Dormitory | - | - |
+| Studioeins | Private Dormitory | Single Room | - |
+: Overview of Saarland University Student Dormitories {#tbl-overview}
+
+
+### University-Managed Student Apartments {#tbl-dormitory}
+
+There are mainly four student dormitories managed by Saarland University:
+
+- [Studentenwohnheim E (Student Dormitory E)](#tbl-wohnheim-e)
+- [Studentenwohnheim Waldhaus (Waldhaus Student Dormitory)](#tbl-waldhaus)
+- [Studentenwohnheim Guckelsberg (Guckelsberg Student Dormitory)](#tbl-guckelsberg)
+- [Studentenwohnheim Rotenberg (Rotenberg Student Dormitory)](#tbl-rotenberg)
+
+
+For more details on each dormitory, please refer to:
+
+- [Studentenwohnheim E (Student Dormitory E)](#tbl-wohnheim-e) ([Official Website](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-E))
+- [Studentenwohnheim Waldhaus (Waldhaus Student Dormitory)](#tbl-waldhaus) ([Official Website](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Waldhaus))
+- [Studentenwohnheim Guckelsberg (Guckelsberg Student Dormitory)](#tbl-guckelsberg) ([Official Website](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Rotenbergstrasse))
+- [Studentenwohnheim Rotenberg (Rotenberg Student Dormitory)](#tbl-rotenberg) ([Official Website](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Rotenbergstrasse))
+
+
+Online application address: https://tl1host.eu/SWSB/#home
+
+
+
+#### Studentenwohnheim E (Student Dormitory E) {#tbl-wohnheim-e}
+
+| Room Type | Area | Facilities | Rent |
+|------|------|------|------|
+| Single Apartment (72 rooms) | Approx. 20m² | Wardrobe, sofa bed, bedside table, bookshelf, desk and chair, mini kitchen, small bathroom (shower, toilet, sink) | 350€, including utilities |
+
+: Detailed information for Studentenwohnheim E {#tbl-wohnheim-e}
+
+#### Studentenwohnheim Waldhaus (Waldhaus Student Dormitory) {#tbl-waldhaus}
+
+| Room Type | Area | Facilities | Rent |
+|------|------|------|------|
+| Single Apartment (254 rooms) | 16m² | Wardrobe, sofa bed, bedside table, bookshelf, desk and chair, mini kitchen, small bathroom (shower, toilet, sink) | 336€ |
+| Double Room (17 rooms) | 32m² | Same as above, shared kitchen and bathroom | 293€ (11m²) / 337€ (16m²) |
+| Family Apartment (14 rooms) | 40m² / 80m² | Living room, bedroom, children's room, equipped with kitchen and bathroom (shower, sink, toilet) | 650€ (40m²) / 839€ (80m²) |
+
+: Detailed information for Studentenwohnheim Waldhaus {#tbl-waldhaus}
+
+#### Studentenwohnheim Guckelsberg (Guckelsberg Student Dormitory) {#tbl-guckelsberg}
+
+| Room Type | Area | Facilities | Rent |
+|------|------|------|------|
+| Single Apartment (46 rooms) | 19-35m² | Wardrobe, sofa bed, bedside table, bookshelf, desk and chair, mini kitchen, small bathroom (shower, toilet, sink) | 290€ - 346€ |
+| Double Apartment (66 rooms) | 29-38m² | Same as above, shared kitchen and bathroom | 239€ (11m²) / 319€ (14m²) / 260€ - 265€ (16m²) |
+| Family Apartment (2 rooms) | 57m² | Living room, bedroom, children's room, equipped with kitchen and bathroom (shower, sink, toilet) | 712€ |
+
+: Detailed information for Studentenwohnheim Guckelsberg {#tbl-guckelsberg}
+
+#### Studentenwohnheim Rotenberg (Rotenberg Student Dormitory) {#tbl-rotenberg}
+
+| Room Type | Area | Facilities | Rent |
+|------|------|------|------|
+| Single Apartment (45 rooms) | 21-27m² | Wardrobe, sofa bed, bedside table, bookshelf, desk and chair, mini kitchen, small bathroom (shower, toilet, sink) | 324€ - 357€ |
+| Double Room (5 rooms) | 34m² | Same as above, shared kitchen and bathroom | 275€ |
+| Triple Room (1 room) | 56m² | Fully equipped, shared kitchen and bathroom | 275€ - 289€ |
+
+: Detailed information for Studentenwohnheim Rotenberg {#tbl-rotenberg}
+
+
+
+> **Currently there are no vacancies in the student dormitories!**
+>
+> Derzeit sind keine freien Zimmer in den Wohnheimen verfügbar!
+>
+> ——Wohnen im Wohnheim
+
+
+
+### Privately Operated Student Apartments
+
+| Name | Room Type | Area (m²) | Monthly Rent (€) | Deposit (€) | Facilities |
+|---|---|---|---|---|---|
+| [TILSITER STRASSE Shared Apartment](https://www.sib-saarbruecken.de/wohnen/wohngemeinschaften/wohngemeinschaften_tilsiter_strasse) | Single Room | 14 / 23 | 310 / 400 (including management fee) | 480 / 600 (one-time) | Shared kitchen and bathroom, fully furnished |
+| [CARL-DUISBERG-HAUS](https://www.sib-saarbruecken.de/wohnen/wohngemeinschaften/studentenwohnen_im_carl_duisberg_haus) | Single Room / Single Apartment | - | 400 / 430 (including electricity) | 600 / 690 | Shared kitchen / kitchenette, private bathroom, fully furnished |
+| [ESG-WOHNHEIM ESG Student Apartment](http://www.waldhausweg7.de/) | Single Room / Double Room | - | 277-466 (including management fee and internet) | - | Shared kitchen and bathroom, 8 rooms per floor |
+| [CUSANUSHAUS](http://www.cusanustreff.de/) | Class A Single Room / Class B Single Room / Class C Single Apartment | 12 / 23 / 31 | 290-320 / 350 / 390-410 | - | A: Shared kitchen and bathroom; B: Kitchenette, shared bathroom; C: Kitchenette, private bathroom; fully furnished |
+| [CAMPO NOVO](https://www.campo-novo-saarbruecken.de/) | Single Room (Student) / Two-Room (Student) / Two-Room (Student Shared) / Two-Room (Business) / Two-Room Duplex (Business) | 20-26 / 44-45 / 44-46 / 43-52 / 53-61 | 615-690 / 990 / 545 / 990-1160 / 1160 (including management fee) | - | Private kitchen and bathroom, balcony or terrace, fully furnished, gym, laundry room, community garden, underground garage |
+| [Quint Immobilien](https://www.quint-immobilien.de/) | - | - | - | - | Currently fully rented |
+| [Zymma](https://zymma.de/listings/?start=01.04.2023&location=4) | - | - | - | - | Currently fully rented, can apply for waiting list |
+| [WOGE Saar](https://www.freundlich-wohnen.de/service/wohnraum-fuer-studenten/) | - | - | - | 1 month's rent | Student discount policy: reduced deposit and shortened rental period |
+| [Studioeins](http://www.studioeins.info/) | Single Room | 23-42 | - | - | City center, private kitchen and bathroom, optional furniture |
+
+Notes:
+
+1. "-" indicates information not provided
+2. Quint Immobilien and Zymma are currently fully rented
+3. WOGE Saar mainly provides discount policies for students, specific room types and prices are not given
+4. Studioeins has optional furniture, prices are not given
+5. The webpage of Saarländischen Bauträgers (SBT) cannot be opened, no information available
+
+### Private Housing
