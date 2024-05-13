@@ -4,19 +4,14 @@
 
 A comprehensive survival guide for students at Saarland University, created by students, for students. 📚
 
-**English** · [简体中文](./README.zh-CN.md) · [Documents][docs] · [Report Bug][github-issues-link] · [Request Feature][github-issues-link]
+**English** · [简体中文](./README.zh-CN.md) · [English Website][english-website-link] · [中文网站][chinese-website-link]
 
-
-[![中文网站][chinese-website-badge]][chinese-website-link] [![英文网站][english-website-badge]][english-website-link]
 
 [chinese-website-badge]: https://img.shields.io/badge/中文网站-访问-blue?style=for-the-badge&logo=read-the-docs
 [chinese-website-link]: https://academic.exusiaiwei.top/uni-saarland-survival-guide/zh/
 [english-website-badge]: https://img.shields.io/badge/website-visit-blue?style=for-the-badge&logo=read-the-docs
 [english-website-link]: https://academic.exusiaiwei.top/uni-saarland-survival-guide/en
 
-  [![GitHub Issues][github-issues-badge]][github-issues-link]
-  [![GitHub PRs][github-prs-badge]][github-prs-link]
-  [![MIT License][license-badge]][license-link]
 
 </div>
 
