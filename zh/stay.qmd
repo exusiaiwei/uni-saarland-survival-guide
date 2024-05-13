@@ -3,29 +3,38 @@
 ```{python}
 #| echo: false
 import folium
+from folium.features import CustomIcon
 
 # 宿舍的信息
 dormitories = [
-    {"name": "Wohnheime E", "location": (49.257400, 7.041500), "type": "university", "icon": "https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg"},
-    {"name": "Studentenwohnanlage Waldhaus", "location": (49.244890, 7.021330), "type": "university", "icon": "https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg"},
-    {"name": "Studentenwohnheim Guckelsberg", "location": (49.265390, 7.040530), "type": "university", "icon": "https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg"},
-    {"name": "Studentenwohnheim Rotenberg", "location": (49.235740, 7.001840), "type": "university", "icon": "https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg"}
+    {"name": "Wohnheime E", "location": (49.257400, 7.041500), "type": "university", "color": "darkblue", "icon": "university"},
+    {"name": "Studentenwohnanlage Waldhaus", "location": (49.244890, 7.021330), "type": "university", "color": "darkblue", "icon": "university"},
+    {"name": "Studentenwohnheim Guckelsberg", "location": (49.265390, 7.040530), "type": "university", "color": "darkblue", "icon": "university"},
+    {"name": "Studentenwohnheim Rotenberg", "location": (49.235740, 7.001840), "type": "university", "color": "darkblue", "icon": "university"},
+    {"name": "TILSITER STRASSE", "location": (49.37826294786214, 8.536109415639546), "type": "private", "color": "cadetblue", "icon": "building"},
+    {"name": "Carl Duisberg Haus", "location": (49.23835064843005, 7.036376055826561), "type": "private", "color": "cadetblue", "icon": "building"},
+    {"name": "ESG Saarbrücken", "location": (49.24468732847097, 7.018832677740648), "type": "other", "color": "cadetblue", "icon": "building"},
+    {"name": "Cusanushaus Saarbrücken", "location": (49.2356132668547, 6.990818476723417), "type": "other", "color": "cadetblue", "icon": "building"},
+    {"name": "CAMPO NOVO Saarbrücken", "location": (49.24218686964247, 7.007729411047266), "type": "private", "color": "cadetblue", "icon": "building"},
+    {"name": "Quint Immobilien GmbH", "location": (49.27712239030715, 7.034571602702453), "type": "private", "color": "cadetblue", "icon": "building"},
+    {"name": "Zymma", "location": (49.231796028851136, 7.006448137049002), "type": "other", "color": "cadetblue", "icon": "building"},
+    {"name": "WOGE Saar", "location": (49.23176489619987, 6.999792006811255), "type": "other", "color": "cadetblue", "icon": "building"}
 ]
 
 # 学校的坐标
 school_location = (49.2554, 7.0419)
 
 # 创建地图,以学校的坐标为中心
-map = folium.Map(location=school_location, zoom_start=14)
+map = folium.Map(location=school_location, zoom_start=12)
 
-# 添加标记和线路
+# 添加标记
 for dormitory in dormitories:
-    # 添加标记
+    icon = folium.Icon(color=dormitory["color"], icon=dormitory["icon"], prefix='fa')
     folium.Marker(
         location=dormitory["location"],
         popup=folium.Popup(html=dormitory["name"], max_width=200),
         tooltip='Click for more information',
-        icon=folium.features.CustomIcon(dormitory["icon"], icon_size=(50, 50))
+        icon=icon
     ).add_to(map)
 
 # 显示地图
@@ -34,31 +43,40 @@ map
 
 
 ## 住房列表
-### 大学管理的学生公寓 {#tbl-dormitory}
-
-萨尔大学提供多种学生宿舍选择。表 @tbl-overview 提供了一个概览。
+表 @tbl-overview 提供了一个概览。
 
 | 宿舍名称 | 类型 | 位置 | 租金范围 |
 |----------|------|------|----------|
-| [Studentenwohnheim E](#tbl-wohnheim-e) | 学校宿舍 | 校园中心,靠近Mensa | 350,00€,包括水电暖 |
-| [Studentenwohnheim Waldhaus](#tbl-waldhaus) | 学校宿舍 | 离学校约2公里,公交直达学校/市区 | 293,00€ - 839,00€ |
-| [Studentenwohnheim Guckelsberg](#tbl-guckelsberg) | 学校宿舍 | 位于离学校1.5公里的Dudweiler,公交或步行(穿过森林)可达 | 239,00€ - 712,00€ |
-| [Studentenwohnheim Rotenberg](#tbl-rotenberg) | 学校宿舍 | 地处市中心,交通便利 | 275,00€ - 357,00€ |
+| [Studentenwohnheim E（学生宿舍E）](#tbl-wohnheim-e) | 学校宿舍 | 校园中心,靠近Mensa | 350,00€,包括水电暖 |
+| [Studentenwohnheim Waldhaus（瓦尔德豪斯学生宿舍）](#tbl-waldhaus) | 学校宿舍 | 离学校约2公里,公交直达学校/市区 | 293,00€ - 839,00€ |
+| [Studentenwohnheim Guckelsberg（古克尔斯贝格学生宿舍）](#tbl-guckelsberg) | 学校宿舍 | 位于离学校1.5公里的Dudweiler,公交或步行(穿过森林)可达 | 239,00€ - 712,00€ |
+| [Studentenwohnheim Rotenberg（罗滕贝格学生宿舍）](#tbl-rotenberg) | 学校宿舍 | 地处市中心,交通便利 | 275,00€ - 357,00€ |
 : 萨尔大学学生宿舍概览 {#tbl-overview}
+
+
+### 大学管理的学生公寓 {#tbl-dormitory}
+
+萨尔大学管理的学生宿舍主要有四个,分别是:
+
+- [Studentenwohnheim E（学生宿舍E）](#tbl-wohnheim-e)
+- [Studentenwohnheim Waldhaus（瓦尔德豪斯学生宿舍）](#tbl-waldhaus)
+- [Studentenwohnheim Guckelsberg（古克尔斯贝格学生宿舍）](#tbl-guckelsberg)
+- [Studentenwohnheim Rotenberg（罗滕贝格学生宿舍）](#tbl-rotenberg)
+
 
 有关每个宿舍的更多详情,请参见:
 
-- [Studentenwohnheim E](#tbl-wohnheim-e) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-E))
-- [Studentenwohnheim Waldhaus](#tbl-waldhaus) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Waldhaus))
-- [Studentenwohnheim Guckelsberg](#tbl-guckelsberg) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Rotenbergstrasse))
-- [Studentenwohnheim Rotenberg](#tbl-rotenberg) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Rotenbergstrasse))
+- [Studentenwohnheim E（学生宿舍E）](#tbl-wohnheim-e) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-E))
+- [Studentenwohnheim Waldhaus（瓦尔德豪斯学生宿舍）](#tbl-waldhaus) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Waldhaus))
+- [Studentenwohnheim Guckelsberg（古克尔斯贝格学生宿舍）](#tbl-guckelsberg) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Rotenbergstrasse))
+- [Studentenwohnheim Rotenberg（罗滕贝格学生宿舍）](#tbl-rotenberg) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Rotenbergstrasse))
 
 
 在线申请地址：https://tl1host.eu/SWSB/#home
 
 
 
-#### Studentenwohnheim E {#tbl-wohnheim-e}
+#### Studentenwohnheim E（学生宿舍E） {#tbl-wohnheim-e}
 
 | 房型 | 面积 | 设施 | 租金 |
 |------|------|------|------|
@@ -66,7 +84,7 @@ map
 
 : Studentenwohnheim E的详细信息 {#tbl-wohnheim-e}
 
-#### Studentenwohnheim Waldhaus {#tbl-waldhaus}
+#### Studentenwohnheim Waldhaus（瓦尔德豪斯学生宿舍） {#tbl-waldhaus}
 
 | 房型 | 面积 | 设施 | 租金 |
 |------|------|------|------|
@@ -76,7 +94,7 @@ map
 
 : Studentenwohnheim Waldhaus的详细信息 {#tbl-waldhaus}
 
-#### Studentenwohnheim Guckelsberg {#tbl-guckelsberg}
+#### Studentenwohnheim Guckelsberg（古克尔斯贝格学生宿舍） {#tbl-guckelsberg}
 
 | 房型 | 面积 | 设施 | 租金 |
 |------|------|------|------|
@@ -86,7 +104,7 @@ map
 
 : Studentenwohnheim Guckelsberg的详细信息 {#tbl-guckelsberg}
 
-#### Studentenwohnheim Rotenberg {#tbl-rotenberg}
+#### Studentenwohnheim Rotenberg（罗滕贝格学生宿舍） {#tbl-rotenberg}
 
 | 房型 | 面积 | 设施 | 租金 |
 |------|------|------|------|
@@ -107,5 +125,25 @@ map
 
 
 ### 私人运营的学生公寓
+
+| 名称 | 房型 | 面积 (m²) | 月租金 (€) | 押金 (€) | 设施 |
+|---|---|---|---|---|---|
+| TILSITER STRASSE 蒂尔西特大街合租公寓 | 单人间 | 14 / 23 | 310 / 400 (含管理费) | 480 / 600 (一次性) | 共用厨房和卫浴,全家具 |
+| CARL-DUISBERG-HAUS 卡尔·杜伊斯堡豪斯 | 单人间 / 单间公寓 | - | 400 / 430 (含电费) | 600 / 690 | 共用厨房 / 小厨房,独立卫浴,全家具 |
+| ESG-WOHNHEIM ESG学生公寓 | 单人间 / 双人间 | - | 277-466 (含管理费和网络) | - | 共用厨房和卫浴,每层8个房间 |
+| CUSANUSHAUS 库萨努斯之家 | A类单人间 / B类单人间 / C类单间公寓 | 12 / 23 / 31 | 290-320 / 350 / 390-410 | - | A: 共用厨房和卫浴; B: 小厨房,共用卫浴; C: 小厨房,独立卫浴;全家具 |
+| CAMPO NOVO | 单人间(学生) / 两房(学生) / 两房(学生合租) / 两房(商务) / 两房复式(商务) | 20-26 / 44-45 / 44-46 / 43-52 / 53-61 | 615-690 / 990 / 545 / 990-1160 / 1160 (含管理费) | - | 独立厨房卫浴,阳台或露台,全家具,健身房,洗衣房,社区花园,地下车库 |
+| Quint Immobilien | - | - | - | - | 目前已租满 |
+| Zymma | - | - | - | - | 目前已租满,可申请候补 |
+| WOGE Saar | - | - | - | 1个月租金 | 学生优惠政策:减免押金和缩短租期 |
+| Studioeins | 单人间 | 23-42 | - | - | 市中心,独立厨房卫浴,可选家具 |
+
+注:
+
+1. "-"表示信息未提供
+2. Quint Immobilien和Zymma目前房源已租满
+3. WOGE Saar主要提供面向学生的优惠政策,具体房型和价格未给出
+4. Studioeins可选家具,价格未给出
+5. Saarländischen Bauträgers(SBT)的网页无法打开,暂无信息
 
 ### 私人住宅
