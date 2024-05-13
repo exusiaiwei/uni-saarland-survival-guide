@@ -36,14 +36,66 @@ map
 ## 住房列表
 ### 大学管理的学生公寓 {#tbl-dormitory}
 
+萨尔大学提供多种学生宿舍选择。表 @tbl-overview 提供了一个概览。
+
+| 宿舍名称 | 类型 | 位置 | 租金范围 |
+|----------|------|------|----------|
+| [Studentenwohnheim E](#tbl-wohnheim-e) | 学校宿舍 | 校园中心,靠近Mensa | 350,00€,包括水电暖 |
+| [Studentenwohnheim Waldhaus](#tbl-waldhaus) | 学校宿舍 | 离学校约2公里,公交直达学校/市区 | 293,00€ - 839,00€ |
+| [Studentenwohnheim Guckelsberg](#tbl-guckelsberg) | 学校宿舍 | 位于离学校1.5公里的Dudweiler,公交或步行(穿过森林)可达 | 239,00€ - 712,00€ |
+| [Studentenwohnheim Rotenberg](#tbl-rotenberg) | 学校宿舍 | 地处市中心,交通便利 | 275,00€ - 357,00€ |
+: 萨尔大学学生宿舍概览 {#tbl-overview}
+
+有关每个宿舍的更多详情,请参见:
+
+- [Studentenwohnheim E](#tbl-wohnheim-e) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-E))
+- [Studentenwohnheim Waldhaus](#tbl-waldhaus) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Waldhaus))
+- [Studentenwohnheim Guckelsberg](#tbl-guckelsberg) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Rotenbergstrasse))
+- [Studentenwohnheim Rotenberg](#tbl-rotenberg) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Rotenbergstrasse))
+
+
 在线申请地址：https://tl1host.eu/SWSB/#home
 
-| 宿舍名称  | 房型 | 租金范围 |
-|----------|------|----------|
-| [Wohnheime E](http://www.heim-e.uni-sb.de/) | 72间单人宿舍,面积约20m² | 均价327€,水电暖多退少补 |
-| [Studentenwohnanlage Waldhaus](https://waldhaus-sb.de/) | 245间单人公寓,17间双人间,14间家庭房 | 根据房型,270~799€不等 |
-| [Studentenwohnheim Guckelsberg](http://www.wohnheim-guckelsberg.de) | 46间单人房,66间双人房,2间家庭房 | 根据房型,215~672€不等 |
-| [Studentenwohnheim Rotenberg](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Rotenbergstrasse) | 45间单人公寓,5间双人房,1间家庭房 | 根据房型,252~334€不等 |
+
+
+#### Studentenwohnheim E {#tbl-wohnheim-e}
+
+| 房型 | 面积 | 设施 | 租金 |
+|------|------|------|------|
+| 单人公寓 (72间) | 约20m² | 衣柜、沙发床、床头柜、书架、桌椅、迷你厨房、小浴室(淋浴、马桶、洗脸池) | 350,00€,包括水电暖 |
+
+: Studentenwohnheim E的详细信息 {#tbl-wohnheim-e}
+
+#### Studentenwohnheim Waldhaus {#tbl-waldhaus}
+
+| 房型 | 面积 | 设施 | 租金 |
+|------|------|------|------|
+| 单人公寓 (254间) | 16m² | 衣柜、沙发床、床头柜、书架、桌椅、迷你厨房、小浴室(淋浴、马桶、洗脸池) | 336,00€ |
+| 双人间 (17间) | 32m² | 同上,共用厨房和浴室 | 293,00€ (11m²) / 337,00€ (16m²) |
+| 家庭公寓 (14间) | 40m² / 80m² | 客厅、卧室、儿童房,配备厨房及浴室(淋浴、洗脸池、马桶) | 650,00€ (40m²) / 839,00€ (80m²) |
+
+: Studentenwohnheim Waldhaus的详细信息 {#tbl-waldhaus}
+
+#### Studentenwohnheim Guckelsberg {#tbl-guckelsberg}
+
+| 房型 | 面积 | 设施 | 租金 |
+|------|------|------|------|
+| 单人公寓 (46间) | 19-35m² | 衣柜、沙发床、床头柜、书架、桌椅、迷你厨房、小浴室(淋浴、马桶、洗脸池) | 290,00€ - 346,00€ |
+| 双人公寓 (66间) | 29-38m² | 同上,共用厨房和浴室 | 239,00€ (11m²) / 319,00€ (14m²) / 260,00€ - 265,00€ (16m²) |
+| 家庭公寓 (2间) | 57m² | 客厅、卧室、儿童房,配备厨房及浴室(淋浴、洗脸池、马桶) | 712,00€ |
+
+: Studentenwohnheim Guckelsberg的详细信息 {#tbl-guckelsberg}
+
+#### Studentenwohnheim Rotenberg {#tbl-rotenberg}
+
+| 房型 | 面积 | 设施 | 租金 |
+|------|------|------|------|
+| 单人公寓 (45间) | 21-27m² | 衣柜、沙发床、床头柜、书架、桌椅、迷你厨房、小浴室(淋浴、马桶、洗脸池) | 324,00€ - 357,00€ |
+| 双人间 (5间) | 34m² | 同上,共用厨房和浴室 | 275,00€ |
+| 三人间 (1间) | 56m² | 完全配备,共用厨房和浴室 | 275,00€ - 289,00€ |
+
+: Studentenwohnheim Rotenberg的详细信息 {#tbl-rotenberg}
+
 
 
 > **目前学生宿舍没有空房！**
