@@ -32,6 +32,7 @@ format:
     theme: journal
     code-copy: true
     toc: true
+    lang: zh
 
 jupyter:
   kernelspec:
