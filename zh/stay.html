@@ -186,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div id="270e7d78" class="cell" data-execution_count="1">
+<div id="f998030b" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display" data-execution_count="1">
 <div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -&gt; Trust Notebook</span><iframe srcdoc="<!DOCTYPE html>
 <html>
@@ -215,7 +215,7 @@ ul.task-list li input[type="checkbox"] {
             <meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
             <style>
-                #map_548b31e63800563ec1294a6749f0cb8b {
+                #map_e728d70afe6eac61d77fd85e42b78a18 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -229,18 +229,18 @@ ul.task-list li input[type="checkbox"] {
 <body>
     
     
-            <div class=&quot;folium-map&quot; id=&quot;map_548b31e63800563ec1294a6749f0cb8b&quot; ></div>
+            <div class=&quot;folium-map&quot; id=&quot;map_e728d70afe6eac61d77fd85e42b78a18&quot; ></div>
         
 </body>
 <script>
     
     
-            var map_548b31e63800563ec1294a6749f0cb8b = L.map(
-                &quot;map_548b31e63800563ec1294a6749f0cb8b&quot;,
+            var map_e728d70afe6eac61d77fd85e42b78a18 = L.map(
+                &quot;map_e728d70afe6eac61d77fd85e42b78a18&quot;,
                 {
                     center: [49.2554, 7.0419],
                     crs: L.CRS.EPSG3857,
-                    zoom: 14,
+                    zoom: 12,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -250,41 +250,43 @@ ul.task-list li input[type="checkbox"] {
 
         
     
-            var tile_layer_019ff9d5a92bf9ba6fc37183056d465b = L.tileLayer(
+            var tile_layer_ccdb66f4e51ca7440fced864ba95c134 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
         
     
-            tile_layer_019ff9d5a92bf9ba6fc37183056d465b.addTo(map_548b31e63800563ec1294a6749f0cb8b);
+            tile_layer_ccdb66f4e51ca7440fced864ba95c134.addTo(map_e728d70afe6eac61d77fd85e42b78a18);
         
     
-            var marker_cf4e085d08bae17a5fac18e2289cd0b6 = L.marker(
+            var marker_0da6c38902e89a515649ddd6b7beb125 = L.marker(
                 [49.2574, 7.0415],
                 {}
-            ).addTo(map_548b31e63800563ec1294a6749f0cb8b);
+            ).addTo(map_e728d70afe6eac61d77fd85e42b78a18);
         
     
-        var custom_icon_f5234fed85e5e803db1089e0d4d756df = L.icon({&quot;iconSize&quot;: [50, 50], &quot;iconUrl&quot;: &quot;https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg&quot;});
-        marker_cf4e085d08bae17a5fac18e2289cd0b6.setIcon(custom_icon_f5234fed85e5e803db1089e0d4d756df);
+            var icon_0c276bef1aa05ad728c8cacb11e18d72 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;university&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;darkblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_0da6c38902e89a515649ddd6b7beb125.setIcon(icon_0c276bef1aa05ad728c8cacb11e18d72);
         
     
-        var popup_8a1df77a171d78ae74d1c5396bd462f9 = L.popup({&quot;maxWidth&quot;: 200});
+        var popup_5b88ca657c7e73cd2cd11a30e7e33b8b = L.popup({&quot;maxWidth&quot;: 200});
 
         
             
-                var html_3db9256876fa2ac49c8d4e9f7b1c9bac = $(`<div id=&quot;html_3db9256876fa2ac49c8d4e9f7b1c9bac&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Wohnheime E</div>`)[0];
-                popup_8a1df77a171d78ae74d1c5396bd462f9.setContent(html_3db9256876fa2ac49c8d4e9f7b1c9bac);
+                var html_5694fb5ac104e450922dfefeebf53987 = $(`<div id=&quot;html_5694fb5ac104e450922dfefeebf53987&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Wohnheime E</div>`)[0];
+                popup_5b88ca657c7e73cd2cd11a30e7e33b8b.setContent(html_5694fb5ac104e450922dfefeebf53987);
             
         
 
-        marker_cf4e085d08bae17a5fac18e2289cd0b6.bindPopup(popup_8a1df77a171d78ae74d1c5396bd462f9)
+        marker_0da6c38902e89a515649ddd6b7beb125.bindPopup(popup_5b88ca657c7e73cd2cd11a30e7e33b8b)
         ;
 
         
     
     
-            marker_cf4e085d08bae17a5fac18e2289cd0b6.bindTooltip(
+            marker_0da6c38902e89a515649ddd6b7beb125.bindTooltip(
                 `<div>
                      Click for more information
                  </div>`,
@@ -292,32 +294,34 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_d9950e12fa6e6c9309150338a24c32af = L.marker(
+            var marker_1cbba2d9e156fd339903f1b52f123f46 = L.marker(
                 [49.24489, 7.02133],
                 {}
-            ).addTo(map_548b31e63800563ec1294a6749f0cb8b);
+            ).addTo(map_e728d70afe6eac61d77fd85e42b78a18);
         
     
-        var custom_icon_85816017ea76713850b0cc3d561ef429 = L.icon({&quot;iconSize&quot;: [50, 50], &quot;iconUrl&quot;: &quot;https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg&quot;});
-        marker_d9950e12fa6e6c9309150338a24c32af.setIcon(custom_icon_85816017ea76713850b0cc3d561ef429);
+            var icon_fd61d3e6e3c04ffc821c83d378a0bf4e = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;university&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;darkblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_1cbba2d9e156fd339903f1b52f123f46.setIcon(icon_fd61d3e6e3c04ffc821c83d378a0bf4e);
         
     
-        var popup_d31c097049846e8bd6cb948bb5cc8c2b = L.popup({&quot;maxWidth&quot;: 200});
+        var popup_259930a6e1182200d949675481bcf338 = L.popup({&quot;maxWidth&quot;: 200});
 
         
             
-                var html_758f1c5dfc28e4d1f0933067724a983d = $(`<div id=&quot;html_758f1c5dfc28e4d1f0933067724a983d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Studentenwohnanlage Waldhaus</div>`)[0];
-                popup_d31c097049846e8bd6cb948bb5cc8c2b.setContent(html_758f1c5dfc28e4d1f0933067724a983d);
+                var html_9d3019e96d0aa5c1c724375509f983fd = $(`<div id=&quot;html_9d3019e96d0aa5c1c724375509f983fd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Studentenwohnanlage Waldhaus</div>`)[0];
+                popup_259930a6e1182200d949675481bcf338.setContent(html_9d3019e96d0aa5c1c724375509f983fd);
             
         
 
-        marker_d9950e12fa6e6c9309150338a24c32af.bindPopup(popup_d31c097049846e8bd6cb948bb5cc8c2b)
+        marker_1cbba2d9e156fd339903f1b52f123f46.bindPopup(popup_259930a6e1182200d949675481bcf338)
         ;
 
         
     
     
-            marker_d9950e12fa6e6c9309150338a24c32af.bindTooltip(
+            marker_1cbba2d9e156fd339903f1b52f123f46.bindTooltip(
                 `<div>
                      Click for more information
                  </div>`,
@@ -325,32 +329,34 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_c81b584780858cb77ad3fb2ba3d0eb60 = L.marker(
+            var marker_5fa68fa23fbeaa2000f6cf47e42830fa = L.marker(
                 [49.26539, 7.04053],
                 {}
-            ).addTo(map_548b31e63800563ec1294a6749f0cb8b);
+            ).addTo(map_e728d70afe6eac61d77fd85e42b78a18);
         
     
-        var custom_icon_4f8fb9b1d7d8f219cf1a939d464258b8 = L.icon({&quot;iconSize&quot;: [50, 50], &quot;iconUrl&quot;: &quot;https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg&quot;});
-        marker_c81b584780858cb77ad3fb2ba3d0eb60.setIcon(custom_icon_4f8fb9b1d7d8f219cf1a939d464258b8);
+            var icon_9ea906534123049715ca44f30f96e61a = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;university&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;darkblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_5fa68fa23fbeaa2000f6cf47e42830fa.setIcon(icon_9ea906534123049715ca44f30f96e61a);
         
     
-        var popup_e303817c87a72cf4df996be68b6ec8d0 = L.popup({&quot;maxWidth&quot;: 200});
+        var popup_8d34dbaebf943160409c5aa562360330 = L.popup({&quot;maxWidth&quot;: 200});
 
         
             
-                var html_fe74ddbbab61c65e23f236f4c4ef1ff2 = $(`<div id=&quot;html_fe74ddbbab61c65e23f236f4c4ef1ff2&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Studentenwohnheim Guckelsberg</div>`)[0];
-                popup_e303817c87a72cf4df996be68b6ec8d0.setContent(html_fe74ddbbab61c65e23f236f4c4ef1ff2);
+                var html_a90fbec2cd8cb0e45ed57994a159e202 = $(`<div id=&quot;html_a90fbec2cd8cb0e45ed57994a159e202&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Studentenwohnheim Guckelsberg</div>`)[0];
+                popup_8d34dbaebf943160409c5aa562360330.setContent(html_a90fbec2cd8cb0e45ed57994a159e202);
             
         
 
-        marker_c81b584780858cb77ad3fb2ba3d0eb60.bindPopup(popup_e303817c87a72cf4df996be68b6ec8d0)
+        marker_5fa68fa23fbeaa2000f6cf47e42830fa.bindPopup(popup_8d34dbaebf943160409c5aa562360330)
         ;
 
         
     
     
-            marker_c81b584780858cb77ad3fb2ba3d0eb60.bindTooltip(
+            marker_5fa68fa23fbeaa2000f6cf47e42830fa.bindTooltip(
                 `<div>
                      Click for more information
                  </div>`,
@@ -358,32 +364,314 @@ ul.task-list li input[type="checkbox"] {
             );
         
     
-            var marker_f37f60f193611ccf0d5e43f5786e0016 = L.marker(
+            var marker_7d57ec31fa098b92a1a07bb866ba926b = L.marker(
                 [49.23574, 7.00184],
                 {}
-            ).addTo(map_548b31e63800563ec1294a6749f0cb8b);
+            ).addTo(map_e728d70afe6eac61d77fd85e42b78a18);
         
     
-        var custom_icon_04d1ffe6359043d68a28d7624cd8e390 = L.icon({&quot;iconSize&quot;: [50, 50], &quot;iconUrl&quot;: &quot;https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg&quot;});
-        marker_f37f60f193611ccf0d5e43f5786e0016.setIcon(custom_icon_04d1ffe6359043d68a28d7624cd8e390);
+            var icon_5e84571e67d8ad6b524059fed88d483d = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;university&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;darkblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_7d57ec31fa098b92a1a07bb866ba926b.setIcon(icon_5e84571e67d8ad6b524059fed88d483d);
         
     
-        var popup_b984b675c4e23cb3c913a8ec61a91ab6 = L.popup({&quot;maxWidth&quot;: 200});
+        var popup_5b1c12933a525b45556eed2665944989 = L.popup({&quot;maxWidth&quot;: 200});
 
         
             
-                var html_22c4eebbb60da92e02c045beeb95f429 = $(`<div id=&quot;html_22c4eebbb60da92e02c045beeb95f429&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Studentenwohnheim Rotenberg</div>`)[0];
-                popup_b984b675c4e23cb3c913a8ec61a91ab6.setContent(html_22c4eebbb60da92e02c045beeb95f429);
+                var html_9932e947bda18390a0bf14231a4ad0d7 = $(`<div id=&quot;html_9932e947bda18390a0bf14231a4ad0d7&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Studentenwohnheim Rotenberg</div>`)[0];
+                popup_5b1c12933a525b45556eed2665944989.setContent(html_9932e947bda18390a0bf14231a4ad0d7);
             
         
 
-        marker_f37f60f193611ccf0d5e43f5786e0016.bindPopup(popup_b984b675c4e23cb3c913a8ec61a91ab6)
+        marker_7d57ec31fa098b92a1a07bb866ba926b.bindPopup(popup_5b1c12933a525b45556eed2665944989)
         ;
 
         
     
     
-            marker_f37f60f193611ccf0d5e43f5786e0016.bindTooltip(
+            marker_7d57ec31fa098b92a1a07bb866ba926b.bindTooltip(
+                `<div>
+                     Click for more information
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_b98bac8ce9759fe3e00465501fc2c3cf = L.marker(
+                [49.37826294786214, 8.536109415639546],
+                {}
+            ).addTo(map_e728d70afe6eac61d77fd85e42b78a18);
+        
+    
+            var icon_382f842609cc9450e81edc6c8a8fad05 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;building&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;cadetblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_b98bac8ce9759fe3e00465501fc2c3cf.setIcon(icon_382f842609cc9450e81edc6c8a8fad05);
+        
+    
+        var popup_7c7aeea2beb3740354d4a3246a2c6a2d = L.popup({&quot;maxWidth&quot;: 200});
+
+        
+            
+                var html_405aa3931aaa44aaeb0ca48a9a5b7c5e = $(`<div id=&quot;html_405aa3931aaa44aaeb0ca48a9a5b7c5e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>TILSITER STRASSE</div>`)[0];
+                popup_7c7aeea2beb3740354d4a3246a2c6a2d.setContent(html_405aa3931aaa44aaeb0ca48a9a5b7c5e);
+            
+        
+
+        marker_b98bac8ce9759fe3e00465501fc2c3cf.bindPopup(popup_7c7aeea2beb3740354d4a3246a2c6a2d)
+        ;
+
+        
+    
+    
+            marker_b98bac8ce9759fe3e00465501fc2c3cf.bindTooltip(
+                `<div>
+                     Click for more information
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_5dd475e8776408196235d5eb82a219f3 = L.marker(
+                [49.23835064843005, 7.036376055826561],
+                {}
+            ).addTo(map_e728d70afe6eac61d77fd85e42b78a18);
+        
+    
+            var icon_bbeb1f07e0439798ab169e65058b3e63 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;building&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;cadetblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_5dd475e8776408196235d5eb82a219f3.setIcon(icon_bbeb1f07e0439798ab169e65058b3e63);
+        
+    
+        var popup_390493e5c1ff7e95f26740b562ca6618 = L.popup({&quot;maxWidth&quot;: 200});
+
+        
+            
+                var html_912bc36d32e46bf6cc8e4665a7fd0972 = $(`<div id=&quot;html_912bc36d32e46bf6cc8e4665a7fd0972&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Carl Duisberg Haus</div>`)[0];
+                popup_390493e5c1ff7e95f26740b562ca6618.setContent(html_912bc36d32e46bf6cc8e4665a7fd0972);
+            
+        
+
+        marker_5dd475e8776408196235d5eb82a219f3.bindPopup(popup_390493e5c1ff7e95f26740b562ca6618)
+        ;
+
+        
+    
+    
+            marker_5dd475e8776408196235d5eb82a219f3.bindTooltip(
+                `<div>
+                     Click for more information
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_7e6b04c511ace1bd8904a1457a03aab2 = L.marker(
+                [49.24468732847097, 7.018832677740648],
+                {}
+            ).addTo(map_e728d70afe6eac61d77fd85e42b78a18);
+        
+    
+            var icon_752934debee4263b15c12b1ef4d2b510 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;building&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;cadetblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_7e6b04c511ace1bd8904a1457a03aab2.setIcon(icon_752934debee4263b15c12b1ef4d2b510);
+        
+    
+        var popup_f8fd060495e414354db68c9392c6d026 = L.popup({&quot;maxWidth&quot;: 200});
+
+        
+            
+                var html_6dac3cce7e4e85f921d7100fcb4ffdf6 = $(`<div id=&quot;html_6dac3cce7e4e85f921d7100fcb4ffdf6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>ESG Saarbrücken</div>`)[0];
+                popup_f8fd060495e414354db68c9392c6d026.setContent(html_6dac3cce7e4e85f921d7100fcb4ffdf6);
+            
+        
+
+        marker_7e6b04c511ace1bd8904a1457a03aab2.bindPopup(popup_f8fd060495e414354db68c9392c6d026)
+        ;
+
+        
+    
+    
+            marker_7e6b04c511ace1bd8904a1457a03aab2.bindTooltip(
+                `<div>
+                     Click for more information
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_381c77454765b7ae0c2745bbf3751460 = L.marker(
+                [49.2356132668547, 6.990818476723417],
+                {}
+            ).addTo(map_e728d70afe6eac61d77fd85e42b78a18);
+        
+    
+            var icon_2ac708535ef23349c1989a3e795169c0 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;building&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;cadetblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_381c77454765b7ae0c2745bbf3751460.setIcon(icon_2ac708535ef23349c1989a3e795169c0);
+        
+    
+        var popup_4a172b995045b01067945ade9526f672 = L.popup({&quot;maxWidth&quot;: 200});
+
+        
+            
+                var html_db5bcb03004898c1fcc3e122876a3f61 = $(`<div id=&quot;html_db5bcb03004898c1fcc3e122876a3f61&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Cusanushaus Saarbrücken</div>`)[0];
+                popup_4a172b995045b01067945ade9526f672.setContent(html_db5bcb03004898c1fcc3e122876a3f61);
+            
+        
+
+        marker_381c77454765b7ae0c2745bbf3751460.bindPopup(popup_4a172b995045b01067945ade9526f672)
+        ;
+
+        
+    
+    
+            marker_381c77454765b7ae0c2745bbf3751460.bindTooltip(
+                `<div>
+                     Click for more information
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_2bddae175b437c193934a6d0c1ceccfc = L.marker(
+                [49.24218686964247, 7.007729411047266],
+                {}
+            ).addTo(map_e728d70afe6eac61d77fd85e42b78a18);
+        
+    
+            var icon_4de5f205564120a03a5a2b732e873c95 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;building&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;cadetblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_2bddae175b437c193934a6d0c1ceccfc.setIcon(icon_4de5f205564120a03a5a2b732e873c95);
+        
+    
+        var popup_f2bb1eceb376d04e82708b64bf514469 = L.popup({&quot;maxWidth&quot;: 200});
+
+        
+            
+                var html_81ad0fe1c9461d3a5eb83b4bd9de3829 = $(`<div id=&quot;html_81ad0fe1c9461d3a5eb83b4bd9de3829&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>CAMPO NOVO Saarbrücken</div>`)[0];
+                popup_f2bb1eceb376d04e82708b64bf514469.setContent(html_81ad0fe1c9461d3a5eb83b4bd9de3829);
+            
+        
+
+        marker_2bddae175b437c193934a6d0c1ceccfc.bindPopup(popup_f2bb1eceb376d04e82708b64bf514469)
+        ;
+
+        
+    
+    
+            marker_2bddae175b437c193934a6d0c1ceccfc.bindTooltip(
+                `<div>
+                     Click for more information
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_1bd0d7ab59be330c586c05217a2cda39 = L.marker(
+                [49.27712239030715, 7.034571602702453],
+                {}
+            ).addTo(map_e728d70afe6eac61d77fd85e42b78a18);
+        
+    
+            var icon_ef722fbc3bbf2b35a73cc6a5919671b2 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;building&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;cadetblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_1bd0d7ab59be330c586c05217a2cda39.setIcon(icon_ef722fbc3bbf2b35a73cc6a5919671b2);
+        
+    
+        var popup_0c56a0a3001492aaa8eaf5692ca30b17 = L.popup({&quot;maxWidth&quot;: 200});
+
+        
+            
+                var html_2218d778ad96e52b667cd91b44019c78 = $(`<div id=&quot;html_2218d778ad96e52b667cd91b44019c78&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Quint Immobilien GmbH</div>`)[0];
+                popup_0c56a0a3001492aaa8eaf5692ca30b17.setContent(html_2218d778ad96e52b667cd91b44019c78);
+            
+        
+
+        marker_1bd0d7ab59be330c586c05217a2cda39.bindPopup(popup_0c56a0a3001492aaa8eaf5692ca30b17)
+        ;
+
+        
+    
+    
+            marker_1bd0d7ab59be330c586c05217a2cda39.bindTooltip(
+                `<div>
+                     Click for more information
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_fc35f7fe43d26314af6571be2510729c = L.marker(
+                [49.231796028851136, 7.006448137049002],
+                {}
+            ).addTo(map_e728d70afe6eac61d77fd85e42b78a18);
+        
+    
+            var icon_d2175ee8aeeec6ed6e4a9935764cba06 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;building&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;cadetblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_fc35f7fe43d26314af6571be2510729c.setIcon(icon_d2175ee8aeeec6ed6e4a9935764cba06);
+        
+    
+        var popup_1d011a9b7d758398e8d0ae64141a232a = L.popup({&quot;maxWidth&quot;: 200});
+
+        
+            
+                var html_312ef74bf499d300ff21a6bb721ee143 = $(`<div id=&quot;html_312ef74bf499d300ff21a6bb721ee143&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Zymma</div>`)[0];
+                popup_1d011a9b7d758398e8d0ae64141a232a.setContent(html_312ef74bf499d300ff21a6bb721ee143);
+            
+        
+
+        marker_fc35f7fe43d26314af6571be2510729c.bindPopup(popup_1d011a9b7d758398e8d0ae64141a232a)
+        ;
+
+        
+    
+    
+            marker_fc35f7fe43d26314af6571be2510729c.bindTooltip(
+                `<div>
+                     Click for more information
+                 </div>`,
+                {&quot;sticky&quot;: true}
+            );
+        
+    
+            var marker_400669b5b4ef477585e2726990403f05 = L.marker(
+                [49.23176489619987, 6.999792006811255],
+                {}
+            ).addTo(map_e728d70afe6eac61d77fd85e42b78a18);
+        
+    
+            var icon_567c6b4982215ddfe945fbe3a1b928e0 = L.AwesomeMarkers.icon(
+                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;building&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;cadetblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            );
+            marker_400669b5b4ef477585e2726990403f05.setIcon(icon_567c6b4982215ddfe945fbe3a1b928e0);
+        
+    
+        var popup_761ceb92eabc17c3f2621d8a2c63641e = L.popup({&quot;maxWidth&quot;: 200});
+
+        
+            
+                var html_37f51500a42757a0c511c236fcafdfdd = $(`<div id=&quot;html_37f51500a42757a0c511c236fcafdfdd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>WOGE Saar</div>`)[0];
+                popup_761ceb92eabc17c3f2621d8a2c63641e.setContent(html_37f51500a42757a0c511c236fcafdfdd);
+            
+        
+
+        marker_400669b5b4ef477585e2726990403f05.bindPopup(popup_761ceb92eabc17c3f2621d8a2c63641e)
+        ;
+
+        
+    
+    
+            marker_400669b5b4ef477585e2726990403f05.bindTooltip(
                 `<div>
                      Click for more information
                  </div>`,
@@ -396,9 +684,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="住房列表" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="住房列表"><span class="header-section-number">1.1</span> 住房列表</h2>
-<section id="tbl-dormitory" class="level3" data-number="1.1.1">
-<h3 data-number="1.1.1" class="anchored" data-anchor-id="tbl-dormitory"><span class="header-section-number">1.1.1</span> 大学管理的学生公寓</h3>
-<p>萨尔大学提供多种学生宿舍选择。表 <a href="#tbl-overview" class="quarto-xref">Table&nbsp;<span>1.1</span></a> 提供了一个概览。</p>
+<p>表 <a href="#tbl-overview" class="quarto-xref">Table&nbsp;<span>1.1</span></a> 提供了一个概览。</p>
 <div id="tbl-overview" class="quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-overview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -416,25 +702,25 @@ Table&nbsp;1.1: 萨尔大学学生宿舍概览
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="#tbl-wohnheim-e">Studentenwohnheim E</a></td>
+<td><a href="#tbl-wohnheim-e">Studentenwohnheim E（学生宿舍E）</a></td>
 <td>学校宿舍</td>
 <td>校园中心,靠近Mensa</td>
 <td>350,00€,包括水电暖</td>
 </tr>
 <tr class="even">
-<td><a href="#tbl-waldhaus">Studentenwohnheim Waldhaus</a></td>
+<td><a href="#tbl-waldhaus">Studentenwohnheim Waldhaus（瓦尔德豪斯学生宿舍）</a></td>
 <td>学校宿舍</td>
 <td>离学校约2公里,公交直达学校/市区</td>
 <td>293,00€ - 839,00€</td>
 </tr>
 <tr class="odd">
-<td><a href="#tbl-guckelsberg">Studentenwohnheim Guckelsberg</a></td>
+<td><a href="#tbl-guckelsberg">Studentenwohnheim Guckelsberg（古克尔斯贝格学生宿舍）</a></td>
 <td>学校宿舍</td>
 <td>位于离学校1.5公里的Dudweiler,公交或步行(穿过森林)可达</td>
 <td>239,00€ - 712,00€</td>
 </tr>
 <tr class="even">
-<td><a href="#tbl-rotenberg">Studentenwohnheim Rotenberg</a></td>
+<td><a href="#tbl-rotenberg">Studentenwohnheim Rotenberg（罗滕贝格学生宿舍）</a></td>
 <td>学校宿舍</td>
 <td>地处市中心,交通便利</td>
 <td>275,00€ - 357,00€</td>
@@ -444,16 +730,25 @@ Table&nbsp;1.1: 萨尔大学学生宿舍概览
 </div>
 </figure>
 </div>
+<section id="tbl-dormitory" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="tbl-dormitory"><span class="header-section-number">1.1.1</span> 大学管理的学生公寓</h3>
+<p>萨尔大学管理的学生宿舍主要有四个,分别是:</p>
+<ul>
+<li><a href="#tbl-wohnheim-e">Studentenwohnheim E（学生宿舍E）</a></li>
+<li><a href="#tbl-waldhaus">Studentenwohnheim Waldhaus（瓦尔德豪斯学生宿舍）</a></li>
+<li><a href="#tbl-guckelsberg">Studentenwohnheim Guckelsberg（古克尔斯贝格学生宿舍）</a></li>
+<li><a href="#tbl-rotenberg">Studentenwohnheim Rotenberg（罗滕贝格学生宿舍）</a></li>
+</ul>
 <p>有关每个宿舍的更多详情,请参见:</p>
 <ul>
-<li><a href="#tbl-wohnheim-e">Studentenwohnheim E</a> (<a href="https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-E">官网</a>)</li>
-<li><a href="#tbl-waldhaus">Studentenwohnheim Waldhaus</a> (<a href="https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Waldhaus">官网</a>)</li>
-<li><a href="#tbl-guckelsberg">Studentenwohnheim Guckelsberg</a> (<a href="https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Rotenbergstrasse">官网</a>)</li>
-<li><a href="#tbl-rotenberg">Studentenwohnheim Rotenberg</a> (<a href="https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Rotenbergstrasse">官网</a>)</li>
+<li><a href="#tbl-wohnheim-e">Studentenwohnheim E（学生宿舍E）</a> (<a href="https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-E">官网</a>)</li>
+<li><a href="#tbl-waldhaus">Studentenwohnheim Waldhaus（瓦尔德豪斯学生宿舍）</a> (<a href="https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Waldhaus">官网</a>)</li>
+<li><a href="#tbl-guckelsberg">Studentenwohnheim Guckelsberg（古克尔斯贝格学生宿舍）</a> (<a href="https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Rotenbergstrasse">官网</a>)</li>
+<li><a href="#tbl-rotenberg">Studentenwohnheim Rotenberg（罗滕贝格学生宿舍）</a> (<a href="https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Rotenbergstrasse">官网</a>)</li>
 </ul>
 <p>在线申请地址：https://tl1host.eu/SWSB/#home</p>
 <section id="tbl-wohnheim-e" class="level4" data-number="1.1.1.1">
-<h4 data-number="1.1.1.1" class="anchored" data-anchor-id="tbl-wohnheim-e"><span class="header-section-number">1.1.1.1</span> Studentenwohnheim E</h4>
+<h4 data-number="1.1.1.1" class="anchored" data-anchor-id="tbl-wohnheim-e"><span class="header-section-number">1.1.1.1</span> Studentenwohnheim E（学生宿舍E）</h4>
 <div id="tbl-wohnheim-e" class="quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-wohnheim-e-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -489,7 +784,7 @@ Table&nbsp;1.2: Studentenwohnheim E的详细信息
 </div>
 </section>
 <section id="tbl-waldhaus" class="level4" data-number="1.1.1.2">
-<h4 data-number="1.1.1.2" class="anchored" data-anchor-id="tbl-waldhaus"><span class="header-section-number">1.1.1.2</span> Studentenwohnheim Waldhaus</h4>
+<h4 data-number="1.1.1.2" class="anchored" data-anchor-id="tbl-waldhaus"><span class="header-section-number">1.1.1.2</span> Studentenwohnheim Waldhaus（瓦尔德豪斯学生宿舍）</h4>
 <div id="tbl-waldhaus" class="quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-waldhaus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -537,7 +832,7 @@ Table&nbsp;1.3: Studentenwohnheim Waldhaus的详细信息
 </div>
 </section>
 <section id="tbl-guckelsberg" class="level4" data-number="1.1.1.3">
-<h4 data-number="1.1.1.3" class="anchored" data-anchor-id="tbl-guckelsberg"><span class="header-section-number">1.1.1.3</span> Studentenwohnheim Guckelsberg</h4>
+<h4 data-number="1.1.1.3" class="anchored" data-anchor-id="tbl-guckelsberg"><span class="header-section-number">1.1.1.3</span> Studentenwohnheim Guckelsberg（古克尔斯贝格学生宿舍）</h4>
 <div id="tbl-guckelsberg" class="quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-guckelsberg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -585,7 +880,7 @@ Table&nbsp;1.4: Studentenwohnheim Guckelsberg的详细信息
 </div>
 </section>
 <section id="tbl-rotenberg" class="level4" data-number="1.1.1.4">
-<h4 data-number="1.1.1.4" class="anchored" data-anchor-id="tbl-rotenberg"><span class="header-section-number">1.1.1.4</span> Studentenwohnheim Rotenberg</h4>
+<h4 data-number="1.1.1.4" class="anchored" data-anchor-id="tbl-rotenberg"><span class="header-section-number">1.1.1.4</span> Studentenwohnheim Rotenberg（罗滕贝格学生宿舍）</h4>
 <div id="tbl-rotenberg" class="quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-rotenberg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -640,6 +935,108 @@ Table&nbsp;1.5: Studentenwohnheim Rotenberg的详细信息
 </section>
 <section id="私人运营的学生公寓" class="level3" data-number="1.1.2">
 <h3 data-number="1.1.2" class="anchored" data-anchor-id="私人运营的学生公寓"><span class="header-section-number">1.1.2</span> 私人运营的学生公寓</h3>
+<table class="table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>名称</th>
+<th>房型</th>
+<th>面积 (m²)</th>
+<th>月租金 (€)</th>
+<th>押金 (€)</th>
+<th>设施</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>TILSITER STRASSE 蒂尔西特大街合租公寓</td>
+<td>单人间</td>
+<td>14 / 23</td>
+<td>310 / 400 (含管理费)</td>
+<td>480 / 600 (一次性)</td>
+<td>共用厨房和卫浴,全家具</td>
+</tr>
+<tr class="even">
+<td>CARL-DUISBERG-HAUS 卡尔·杜伊斯堡豪斯</td>
+<td>单人间 / 单间公寓</td>
+<td>-</td>
+<td>400 / 430 (含电费)</td>
+<td>600 / 690</td>
+<td>共用厨房 / 小厨房,独立卫浴,全家具</td>
+</tr>
+<tr class="odd">
+<td>ESG-WOHNHEIM ESG学生公寓</td>
+<td>单人间 / 双人间</td>
+<td>-</td>
+<td>277-466 (含管理费和网络)</td>
+<td>-</td>
+<td>共用厨房和卫浴,每层8个房间</td>
+</tr>
+<tr class="even">
+<td>CUSANUSHAUS 库萨努斯之家</td>
+<td>A类单人间 / B类单人间 / C类单间公寓</td>
+<td>12 / 23 / 31</td>
+<td>290-320 / 350 / 390-410</td>
+<td>-</td>
+<td>A: 共用厨房和卫浴; B: 小厨房,共用卫浴; C: 小厨房,独立卫浴;全家具</td>
+</tr>
+<tr class="odd">
+<td>CAMPO NOVO</td>
+<td>单人间(学生) / 两房(学生) / 两房(学生合租) / 两房(商务) / 两房复式(商务)</td>
+<td>20-26 / 44-45 / 44-46 / 43-52 / 53-61</td>
+<td>615-690 / 990 / 545 / 990-1160 / 1160 (含管理费)</td>
+<td>-</td>
+<td>独立厨房卫浴,阳台或露台,全家具,健身房,洗衣房,社区花园,地下车库</td>
+</tr>
+<tr class="even">
+<td>Quint Immobilien</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>目前已租满</td>
+</tr>
+<tr class="odd">
+<td>Zymma</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>目前已租满,可申请候补</td>
+</tr>
+<tr class="even">
+<td>WOGE Saar</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>1个月租金</td>
+<td>学生优惠政策:减免押金和缩短租期</td>
+</tr>
+<tr class="odd">
+<td>Studioeins</td>
+<td>单人间</td>
+<td>23-42</td>
+<td>-</td>
+<td>-</td>
+<td>市中心,独立厨房卫浴,可选家具</td>
+</tr>
+</tbody>
+</table>
+<p>注:</p>
+<ol type="1">
+<li>“-”表示信息未提供</li>
+<li>Quint Immobilien和Zymma目前房源已租满</li>
+<li>WOGE Saar主要提供面向学生的优惠政策,具体房型和价格未给出</li>
+<li>Studioeins可选家具,价格未给出</li>
+<li>Saarländischen Bauträgers(SBT)的网页无法打开,暂无信息</li>
+</ol>
 </section>
 <section id="私人住宅" class="level3" data-number="1.1.3">
 <h3 data-number="1.1.3" class="anchored" data-anchor-id="私人住宅"><span class="header-section-number">1.1.3</span> 私人住宅</h3>
