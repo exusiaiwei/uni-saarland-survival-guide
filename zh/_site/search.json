@@ -8,5 +8,15 @@
     "crumbs": [
       "前言"
     ]
+  },
+  {
+    "objectID": "stay.html",
+    "href": "stay.html",
+    "title": "1  住宿",
+    "section": "",
+    "text": "import folium\n\n# 创建地图,以学校的坐标为中心\nmap = folium.Map(location=[49.2554, 7.0419], zoom_start=14)\n\n# 添加标记\nfolium.Marker(\n    location=[49.2600, 7.0450],\n    popup=folium.Popup(html='&lt;a href=\"dorm1.html\"&gt;Dormitory 1&lt;/a&gt;', max_width=200),\n    tooltip='Click for more information'\n).add_to(map)\n\nfolium.Marker(\n    location=[49.2550, 7.0400],\n    popup=folium.Popup(html='&lt;a href=\"dorm2.html\"&gt;Dormitory 2&lt;/a&gt;', max_width=200),\n    tooltip='Click for more information'\n).add_to(map)\n\n# 显示地图\nmap\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>住宿</span>"
+    ]
   }
 ]

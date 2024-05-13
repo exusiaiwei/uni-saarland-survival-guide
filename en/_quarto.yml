@@ -31,3 +31,9 @@ format:
     theme: journal
     code-copy: true
     toc: true
+
+jupyter:
+  kernelspec:
+    name: python3
+    display_name: Python 3
+    language: python

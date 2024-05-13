@@ -1,0 +1,24 @@
+# 住宿
+
+```{python}
+import folium
+
+# 创建地图,以学校的坐标为中心
+map = folium.Map(location=[49.2554, 7.0419], zoom_start=14)
+
+# 添加标记
+folium.Marker(
+    location=[49.2600, 7.0450],
+    popup=folium.Popup(html='<a href="dorm1.html">Dormitory 1</a>', max_width=200),
+    tooltip='Click for more information'
+).add_to(map)
+
+folium.Marker(
+    location=[49.2550, 7.0400],
+    popup=folium.Popup(html='<a href="dorm2.html">Dormitory 2</a>', max_width=200),
+    tooltip='Click for more information'
+).add_to(map)
+
+# 显示地图
+map
+```
