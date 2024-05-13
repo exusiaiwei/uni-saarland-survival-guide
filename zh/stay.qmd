@@ -11,7 +11,7 @@ dormitories = [
     {"name": "Studentenwohnanlage Waldhaus", "location": (49.244890, 7.021330), "type": "university", "color": "darkblue", "icon": "university"},
     {"name": "Studentenwohnheim Guckelsberg", "location": (49.265390, 7.040530), "type": "university", "color": "darkblue", "icon": "university"},
     {"name": "Studentenwohnheim Rotenberg", "location": (49.235740, 7.001840), "type": "university", "color": "darkblue", "icon": "university"},
-    {"name": "TILSITER STRASSE", "location": (49.37826294786214, 8.536109415639546), "type": "private", "color": "cadetblue", "icon": "building"},
+    {"name": "TILSITER STRASSE", "location": (49.23601787263703, 7.048907284661837), "type": "private", "color": "cadetblue", "icon": "building"},
     {"name": "Carl Duisberg Haus", "location": (49.23835064843005, 7.036376055826561), "type": "private", "color": "cadetblue", "icon": "building"},
     {"name": "ESG Saarbrücken", "location": (49.24468732847097, 7.018832677740648), "type": "other", "color": "cadetblue", "icon": "building"},
     {"name": "Cusanushaus Saarbrücken", "location": (49.2356132668547, 6.990818476723417), "type": "other", "color": "cadetblue", "icon": "building"},
