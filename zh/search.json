@@ -14,7 +14,17 @@
     "href": "stay.html",
     "title": "1  住宿",
     "section": "",
-    "text": "import folium\n\n# 创建地图,以学校的坐标为中心\nmap = folium.Map(location=[49.2554, 7.0419], zoom_start=14)\n\n# 添加标记\nfolium.Marker(\n    location=[49.2600, 7.0450],\n    popup=folium.Popup(html='&lt;a href=\"dorm1.html\"&gt;Dormitory 1&lt;/a&gt;', max_width=200),\n    tooltip='Click for more information'\n).add_to(map)\n\nfolium.Marker(\n    location=[49.2550, 7.0400],\n    popup=folium.Popup(html='&lt;a href=\"dorm2.html\"&gt;Dormitory 2&lt;/a&gt;', max_width=200),\n    tooltip='Click for more information'\n).add_to(map)\n\n# 显示地图\nmap\n\nMake this Notebook Trusted to load map: File -&gt; Trust Notebook",
+    "text": "1.1 住房列表",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>住宿</span>"
+    ]
+  },
+  {
+    "objectID": "stay.html#住房列表",
+    "href": "stay.html#住房列表",
+    "title": "1  住宿",
+    "section": "",
+    "text": "1.1.1 大学管理的学生公寓\n在线申请地址：https://tl1host.eu/SWSB/#home\n\n\n\n宿舍名称\n房型\n租金范围\n\n\n\n\nWohnheime E\n72间单人宿舍,面积约20m²\n均价327€,水电暖多退少补\n\n\nStudentenwohnanlage Waldhaus\n245间单人公寓,17间双人间,14间家庭房\n根据房型,270~799€不等\n\n\nStudentenwohnheim Guckelsberg\n46间单人房,66间双人房,2间家庭房\n根据房型,215~672€不等\n\n\nStudentenwohnheim Rotenberg\n45间单人公寓,5间双人房,1间家庭房\n根据房型,252~334€不等\n\n\n\n\n目前学生宿舍没有空房！\nDerzeit sind keine freien Zimmer in den Wohnheimen verfügbar!\n——Wohnen im Wohnheim\n\n\n\n1.1.2 私人运营的学生公寓\n\n\n1.1.3 私人住宅",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>住宿</span>"
     ]
