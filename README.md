@@ -1,12 +1,29 @@
-# 🌟 Uni-Saarland Survival Guide
+<div align="center"><a name="readme-top"></a>
 
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+# Uni-Saarland Survival Guide
 
-🎓 A comprehensive survival guide for students at Saarland University, created by students, for students. 📚
+A comprehensive survival guide for students at Saarland University, created by students, for students. 📚
+
+**English** · [简体中文](./README.zh-CN.md) · [Documents][docs] · [Report Bug][github-issues-link] · [Request Feature][github-issues-link]
+
+
+[![中文网站][chinese-website-badge]][chinese-website-link] [![英文网站][english-website-badge]][english-website-link]
+
+[chinese-website-badge]: https://img.shields.io/badge/中文网站-访问-blue?style=for-the-badge&logo=read-the-docs
+[chinese-website-link]: https://academic.exusiaiwei.top/uni-saarland-survival-guide/zh/
+[english-website-badge]: https://img.shields.io/badge/website-visit-blue?style=for-the-badge&logo=read-the-docs
+[english-website-link]: https://academic.exusiaiwei.top/uni-saarland-survival-guide/en
+
+  [![GitHub Issues][github-issues-badge]][github-issues-link]
+  [![GitHub PRs][github-prs-badge]][github-prs-link]
+  [![MIT License][license-badge]][license-link]
+
+</div>
+
 
 ## Table of Contents
 
-- [🌟 Uni-Saarland Survival Guide](#-uni-saarland-survival-guide)
+- [Uni-Saarland Survival Guide](#uni-saarland-survival-guide)
   - [Table of Contents](#table-of-contents)
   - [Background](#background)
   - [Install](#install)

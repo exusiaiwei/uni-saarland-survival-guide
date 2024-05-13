@@ -1,12 +1,25 @@
-# 🌟 Uni-Saarland Survival Guide | 萨尔大学生存指南 🌟
+<div align="center"><a name="readme-top"></a>
 
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+# 🌟 萨尔大学生存指南
 
 🎓 一份由学生创建,为学生服务的萨尔大学全方位生存指南。📚
 
+[English](./README.md) · **简体中文** · [Documents][docs] · [Report Bug][github-issues-link] · [Request Feature][github-issues-link]
+
+
+[![中文网站][chinese-website-badge]][chinese-website-link] [![英文网站][english-website-badge]][english-website-link]
+
+[chinese-website-badge]: https://img.shields.io/badge/中文网站-访问-blue?style=for-the-badge&logo=read-the-docs
+[chinese-website-link]: https://academic.exusiaiwei.top/uni-saarland-survival-guide/zh/
+[english-website-badge]: https://img.shields.io/badge/website-visit-blue?style=for-the-badge&logo=read-the-docs
+[english-website-link]: https://academic.exusiaiwei.top/uni-saarland-survival-guide/en
+
+
+</div>
+
 ## Table of Contents | 目录
 
-- [🌟 Uni-Saarland Survival Guide | 萨尔大学生存指南 🌟](#-uni-saarland-survival-guide--萨尔大学生存指南-)
+- [🌟 萨尔大学生存指南](#-萨尔大学生存指南)
   - [Table of Contents | 目录](#table-of-contents--目录)
   - [Background | 背景](#background--背景)
   - [Install | 安装](#install--安装)
