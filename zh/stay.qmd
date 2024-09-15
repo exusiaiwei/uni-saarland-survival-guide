@@ -18,7 +18,7 @@ dormitories = [
     {"name": "CAMPO NOVO Saarbrücken", "location": (49.24218686964247, 7.007729411047266), "type": "private", "color": "cadetblue", "icon": "building"},
     {"name": "Quint Immobilien GmbH", "location": (49.27712239030715, 7.034571602702453), "type": "private", "color": "cadetblue", "icon": "building"},
     {"name": "Zymma", "location": (49.231796028851136, 7.006448137049002), "type": "other", "color": "cadetblue", "icon": "building"},
-    {"name": "WOGE Saar", "location": (49.23176489619987, 6.999792006811255), "type": "other", "color": "cadetblue", "icon": "building"}
+    {"name": "WOGE Saar", "location": (49.23176489619987, 6.999792006811255), "type": "other", "color": "cadetblue", "icon": "building"},
     {"name": "Study Cubes", "location": (49.231460, 6.973284), "type": "private", "color": "darkblue", "icon": "building"}
 ]
 
