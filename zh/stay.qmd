@@ -89,6 +89,8 @@ map
 
 #### Studentenwohnheim E（学生宿舍E） {#tbl-wohnheim-e}
 
+[学生宿舍E，图源官网](https://www.stw-saarland.de/_cms/1/attachment/12519_260cea850a9495236b1d98a3399e5c02.jpg)
+
 - 房型：单人公寓 (72间)
 - 面积：约20m²
 - 设施：衣柜、沙发床、床头柜、书架、桌椅、迷你厨房、小浴室(淋浴、马桶、洗脸池)。每层楼的走廊都设有一个公共区域，地下室则设有带电视的休闲室和室外自行车停放处。
@@ -97,6 +99,8 @@ map
 - 地址：Campus Saarbrücken Gebäude D 4.5 66123 Saarbrücken
 
 #### Studentenwohnheim Waldhaus（瓦尔德豪斯学生宿舍） {#tbl-waldhaus}
+
+[瓦尔德豪斯学生宿舍，图源官网](https://www.stw-saarland.de/_cms/1/attachment/139_a7444d8ae0b4ddb21678480406b6d41e.jpg)
 
 - 房型：单人公寓 (254间), 双人间 (17间), 家庭公寓 (14间)
 - 面积：单人公寓16m², 双人间32m², 家庭公寓40m² / 80m²
@@ -112,6 +116,8 @@ map
 
 #### Studentenwohnheim Guckelsberg（古克尔斯贝格学生宿舍） {#tbl-guckelsberg}
 
+[古克尔斯贝格学生宿舍，图源官网](https://www.stw-saarland.de/_cms/1/attachment/136_be0f8800316b440edf8bbce2eb9986e4.jpg)
+
 - 房型：单人公寓 (46间), 双人公寓 (66间), 家庭公寓 (2间)
 - 面积：单人公寓19-35m², 双人公寓29-38m², 家庭公寓57m²
 - 设施：衣柜、沙发床、床头柜、书架、桌椅、迷你厨房、小浴室(淋浴、马桶、洗脸池)
@@ -126,11 +132,7 @@ map
 
 #### Studentenwohnheim Rotenberg（罗滕贝格学生宿舍） {#tbl-rotenberg}
 
-| 房型 | 面积 | 设施 | 租金 |
-|------|------|------|------|
-| 单人公寓 (45间) | 21-27m² | 衣柜、沙发床、床头柜、书架、桌椅、迷你厨房、小浴室(淋浴、马桶、洗脸池) | 324€ - 357€ |
-| 双人间 (5间) | 34m² | 同上,共用厨房和浴室 | 275€ |
-| 三人间 (1间) | 56m² | 完全配备,共用厨房和浴室 | 275€ - 289€ |
+[罗滕贝格学生宿舍，图源官网](https://www.stw-saarland.de/_cms/1/attachment/140_bba2371279d8b0ac8eff5899747237f0.jpg)
 
 - 房型：单人公寓 (45间), 双人间 (5间), 三人间 (1间)
 - 面积：单人公寓21-27m², 双人间34m², 三人间56m²
