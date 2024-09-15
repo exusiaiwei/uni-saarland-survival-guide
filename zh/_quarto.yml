@@ -29,10 +29,11 @@ book:
 
 format:
   html:
-    theme: journal
+    theme: litera
     code-copy: true
     toc: true
     lang: zh
+
 
 jupyter:
   kernelspec:

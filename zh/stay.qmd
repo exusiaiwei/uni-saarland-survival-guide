@@ -19,6 +19,7 @@ dormitories = [
     {"name": "Quint Immobilien GmbH", "location": (49.27712239030715, 7.034571602702453), "type": "private", "color": "cadetblue", "icon": "building"},
     {"name": "Zymma", "location": (49.231796028851136, 7.006448137049002), "type": "other", "color": "cadetblue", "icon": "building"},
     {"name": "WOGE Saar", "location": (49.23176489619987, 6.999792006811255), "type": "other", "color": "cadetblue", "icon": "building"}
+    {"name": "Study Cubes", "location": (49.231460, 6.973284), "type": "private", "color": "darkblue", "icon": "building"}
 ]
 
 # 学校的坐标
@@ -47,9 +48,9 @@ map
 
 | 宿舍名称 | 类型 | 房型 | 月租金范围 |
 |----------|------|------|------------|
-| Studentenwohnheim E（学生宿舍E） | 学校宿舍 | 单人公寓 (72间) | 350€,包括水电暖 |
-| Studentenwohnheim Waldhaus（瓦尔德豪斯学生宿舍） | 学校宿舍 | 单人公寓 (254间), 双人间 (17间), 家庭公寓 (14间) | 293€ - 839€ |
-| Studentenwohnheim Guckelsberg（古克尔斯贝格学生宿舍） | 学校宿舍 | 单人公寓 (46间), 双人公寓 (66间), 家庭公寓 (2间) | 239€ - 712€ |
+| Studentenwohnheim E（学生宿舍E） | 学校宿舍 | 单人公寓 (72间) | 370€,包括水电暖 |
+| Studentenwohnheim Waldhaus（瓦尔德豪斯学生宿舍） | 学校宿舍 | 单人公寓 (254间), 双人间 (17间), 家庭公寓 (14间) | 309€ - 885€ |
+| Studentenwohnheim Guckelsberg（古克尔斯贝格学生宿舍） | 学校宿舍 | 单人公寓 (46间), 双人公寓 (66间), 家庭公寓 (2间) | 252€ - 750€ |
 | Studentenwohnheim Rotenberg（罗滕贝格学生宿舍） | 学校宿舍 | 单人公寓 (45间), 双人间 (5间), 三人间 (1间) | 275€ - 357€ |
 | TILSITER STRASSE 蒂尔西特大街合租公寓 | 私人宿舍 | 单人间 | 310€ - 400€ |
 | CARL-DUISBERG-HAUS 卡尔·杜伊斯堡豪斯 | 私人宿舍 | 单人间, 单间公寓 | 400€ - 430€ |
@@ -60,6 +61,7 @@ map
 | Zymma | 私人宿舍 | - | - |
 | WOGE Saar | 私人宿舍 | - | - |
 | Studioeins | 私人宿舍 | 单人间 | - |
+| Study Cubes | 私人宿舍 | 单人间, 双人间 | 268€-300€（单人），661€-701€（双人）不包电网 |
 : 萨尔大学学生宿舍概览 {#tbl-overview}
 
 
@@ -77,7 +79,7 @@ map
 
 - [Studentenwohnheim E（学生宿舍E）](#tbl-wohnheim-e) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-E))
 - [Studentenwohnheim Waldhaus（瓦尔德豪斯学生宿舍）](#tbl-waldhaus) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Waldhaus))
-- [Studentenwohnheim Guckelsberg（古克尔斯贝格学生宿舍）](#tbl-guckelsberg) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Rotenbergstrasse))
+- [Studentenwohnheim Guckelsberg（古克尔斯贝格学生宿舍）](#tbl-guckelsberg) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Guckelsberg))
 - [Studentenwohnheim Rotenberg（罗滕贝格学生宿舍）](#tbl-rotenberg) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Rotenbergstrasse))
 
 
@@ -87,31 +89,40 @@ map
 
 #### Studentenwohnheim E（学生宿舍E） {#tbl-wohnheim-e}
 
-| 房型 | 面积 | 设施 | 租金 |
-|------|------|------|------|
-| 单人公寓 (72间) | 约20m² | 衣柜、沙发床、床头柜、书架、桌椅、迷你厨房、小浴室(淋浴、马桶、洗脸池) | 350€,包括水电暖 |
-
-: Studentenwohnheim E的详细信息 {#tbl-wohnheim-e}
+- 房型：单人公寓 (72间)
+- 面积：约20m²
+- 设施：衣柜、沙发床、床头柜、书架、桌椅、迷你厨房、小浴室(淋浴、马桶、洗脸池)。每层楼的走廊都设有一个公共区域，地下室则设有带电视的休闲室和室外自行车停放处。
+- 租金：370€,包括水电暖
+- 位置：校园内，靠近食堂。
+- 地址：Campus Saarbrücken Gebäude D 4.5 66123 Saarbrücken
 
 #### Studentenwohnheim Waldhaus（瓦尔德豪斯学生宿舍） {#tbl-waldhaus}
 
-| 房型 | 面积 | 设施 | 租金 |
-|------|------|------|------|
-| 单人公寓 (254间) | 16m² | 衣柜、沙发床、床头柜、书架、桌椅、迷你厨房、小浴室(淋浴、马桶、洗脸池) | 336€ |
-| 双人间 (17间) | 32m² | 同上,共用厨房和浴室 | 293€ (11m²) / 337€ (16m²) |
-| 家庭公寓 (14间) | 40m² / 80m² | 客厅、卧室、儿童房,配备厨房及浴室(淋浴、洗脸池、马桶) | 650€ (40m²) / 839€ (80m²) |
-
-: Studentenwohnheim Waldhaus的详细信息 {#tbl-waldhaus}
+- 房型：单人公寓 (254间), 双人间 (17间), 家庭公寓 (14间)
+- 面积：单人公寓16m², 双人间32m², 家庭公寓40m² / 80m²
+- 设施：衣柜、沙发床、床头柜、书架、桌椅、迷你厨房、小浴室(淋浴、马桶、洗脸池)。地下室设有多个社区空间：电视室、乒乓球室、健身房、小组工作间、家庭酒吧、自行车库、三部电梯
+- 租金：
+  - 单人公寓: 335€
+  - 合租公寓单间（11 平方米）：309€
+  - 合租公寓单间（16 平方米）：356€
+  - 家庭公寓（40 平方米）：685€
+  - 家庭公寓（80 平方米）：885€
+- 位置：位于萨尔布吕肯市中心与校园之间。
+- 地址：Waldhausweg 15-21 66123 Saarbrücken
 
 #### Studentenwohnheim Guckelsberg（古克尔斯贝格学生宿舍） {#tbl-guckelsberg}
 
-| 房型 | 面积 | 设施 | 租金 |
-|------|------|------|------|
-| 单人公寓 (46间) | 19-35m² | 衣柜、沙发床、床头柜、书架、桌椅、迷你厨房、小浴室(淋浴、马桶、洗脸池) | 290€ - 346€ |
-| 双人公寓 (66间) | 29-38m² | 同上,共用厨房和浴室 | 239€ (11m²) / 319€ (14m²) / 260€ - 265€ (16m²) |
-| 家庭公寓 (2间) | 57m² | 客厅、卧室、儿童房,配备厨房及浴室(淋浴、洗脸池、马桶) | 712€ |
-
-: Studentenwohnheim Guckelsberg的详细信息 {#tbl-guckelsberg}
+- 房型：单人公寓 (46间), 双人公寓 (66间), 家庭公寓 (2间)
+- 面积：单人公寓19-35m², 双人公寓29-38m², 家庭公寓57m²
+- 设施：衣柜、沙发床、床头柜、书架、桌椅、迷你厨房、小浴室(淋浴、马桶、洗脸池)
+- 租金：
+  - 单人公寓: 306€ - 366€
+  - 合租公寓单间（11 平方米）：252€
+  - 合租公寓单间（14 平方米）：337€
+  - 合租公寓单间（16 平方米）：274€ - 280€
+  - 家庭公寓：750€
+- 位置：位于杜德维尔，紧邻城市森林。
+- 地址：Richard-Wagner-Straße 91 66125 Saarbrücken-Dudweiler
 
 #### Studentenwohnheim Rotenberg（罗滕贝格学生宿舍） {#tbl-rotenberg}
 
@@ -121,8 +132,15 @@ map
 | 双人间 (5间) | 34m² | 同上,共用厨房和浴室 | 275€ |
 | 三人间 (1间) | 56m² | 完全配备,共用厨房和浴室 | 275€ - 289€ |
 
-: Studentenwohnheim Rotenberg的详细信息 {#tbl-rotenberg}
-
+- 房型：单人公寓 (45间), 双人间 (5间), 三人间 (1间)
+- 面积：单人公寓21-27m², 双人间34m², 三人间56m²
+- 设施：衣柜、沙发床、床头柜、书架、桌椅、迷你厨房、小浴室(淋浴、马桶、洗脸池)
+- 租金：
+  - 单人公寓: 342€ - 377€
+  - 双人合租单间: 290€
+  - 三人合租单间: 290€ - 304€
+- 位置：距离学校5公里，靠近市中心。
+- 地址：Rotenbergstraße 12-14 66111 Saarbrücken
 
 
 > **目前学生宿舍没有空房！**

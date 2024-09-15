@@ -29,7 +29,7 @@ book:
 
 format:
   html:
-    theme: journal
+    theme: litera
     code-copy: true
     toc: true
 
