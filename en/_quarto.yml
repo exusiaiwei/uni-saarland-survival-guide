@@ -23,9 +23,9 @@ book:
       - icon: globe
         menu:
           - text: English
-            href: https://academic.exusiaiwei.top/uni-saarland-survival-guide/en/
+            href: https://exusiaiwei.github.io/uni-saarland-survival-guide/en/
           - text: 中文
-            href: https://academic.exusiaiwei.top/uni-saarland-survival-guide/zh/
+            href: https://exusiaiwei.github.io/uni-saarland-survival-guide/zh/
 
 format:
   html:
