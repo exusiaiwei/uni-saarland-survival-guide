@@ -69,27 +69,27 @@ map
 
 萨尔大学管理的学生宿舍主要有四个,分别是:
 
-- [Studentenwohnheim E（学生宿舍E）](#tbl-wohnheim-e)
-- [Studentenwohnheim Waldhaus（瓦尔德豪斯学生宿舍）](#tbl-waldhaus)
-- [Studentenwohnheim Guckelsberg（古克尔斯贝格学生宿舍）](#tbl-guckelsberg)
-- [Studentenwohnheim Rotenberg（罗滕贝格学生宿舍）](#tbl-rotenberg)
-
-
-有关每个宿舍的更多详情,请参见:
-
 - [Studentenwohnheim E（学生宿舍E）](#tbl-wohnheim-e) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-E))
 - [Studentenwohnheim Waldhaus（瓦尔德豪斯学生宿舍）](#tbl-waldhaus) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Waldhaus))
 - [Studentenwohnheim Guckelsberg（古克尔斯贝格学生宿舍）](#tbl-guckelsberg) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Guckelsberg))
 - [Studentenwohnheim Rotenberg（罗滕贝格学生宿舍）](#tbl-rotenberg) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Rotenbergstrasse))
 
+::: {.callout-tip}
 
-在线申请地址：https://tl1host.eu/SWSB/#home
+# 申请和排队时间
 
+学校宿舍需要通过[在线申请地址](https://tl1host.eu/SWSB/#home)进行申请。
 
+学校宿舍的排队时间较长，根据欢迎中心的[信息](https://www.uni-saarland.de/en/global/welcome-center/accommodation/dormitories-studierendenwerk.html)，等待时间通常为1-2个学期。
+
+申请学校宿舍需要注册文件，但是可以进行补交。因此强烈建议在收到录取通知书后立即申请学校宿舍，并在后续系统中上传注册文件。
+
+切记：不要重新申请，重新申请会重置等待列表。
+:::
 
 #### Studentenwohnheim E（学生宿舍E） {#tbl-wohnheim-e}
 
-[学生宿舍E，图源官网](https://www.stw-saarland.de/_cms/1/attachment/12519_260cea850a9495236b1d98a3399e5c02.jpg)
+![学生宿舍E，图源官网](https://www.stw-saarland.de/_cms/1/attachment/12519_260cea850a9495236b1d98a3399e5c02.jpg)
 
 - 房型：单人公寓 (72间)
 - 面积：约20m²
@@ -100,7 +100,7 @@ map
 
 #### Studentenwohnheim Waldhaus（瓦尔德豪斯学生宿舍） {#tbl-waldhaus}
 
-[瓦尔德豪斯学生宿舍，图源官网](https://www.stw-saarland.de/_cms/1/attachment/139_a7444d8ae0b4ddb21678480406b6d41e.jpg)
+![瓦尔德豪斯学生宿舍，图源官网](https://www.stw-saarland.de/_cms/1/attachment/139_a7444d8ae0b4ddb21678480406b6d41e.jpg)
 
 - 房型：单人公寓 (254间), 双人间 (17间), 家庭公寓 (14间)
 - 面积：单人公寓16m², 双人间32m², 家庭公寓40m² / 80m²
@@ -116,7 +116,7 @@ map
 
 #### Studentenwohnheim Guckelsberg（古克尔斯贝格学生宿舍） {#tbl-guckelsberg}
 
-[古克尔斯贝格学生宿舍，图源官网](https://www.stw-saarland.de/_cms/1/attachment/136_be0f8800316b440edf8bbce2eb9986e4.jpg)
+![古克尔斯贝格学生宿舍，图源官网](https://www.stw-saarland.de/_cms/1/attachment/136_be0f8800316b440edf8bbce2eb9986e4.jpg)
 
 - 房型：单人公寓 (46间), 双人公寓 (66间), 家庭公寓 (2间)
 - 面积：单人公寓19-35m², 双人公寓29-38m², 家庭公寓57m²
@@ -132,7 +132,7 @@ map
 
 #### Studentenwohnheim Rotenberg（罗滕贝格学生宿舍） {#tbl-rotenberg}
 
-[罗滕贝格学生宿舍，图源官网](https://www.stw-saarland.de/_cms/1/attachment/140_bba2371279d8b0ac8eff5899747237f0.jpg)
+![罗滕贝格学生宿舍，图源官网](https://www.stw-saarland.de/_cms/1/attachment/140_bba2371279d8b0ac8eff5899747237f0.jpg)
 
 - 房型：单人公寓 (45间), 双人间 (5间), 三人间 (1间)
 - 面积：单人公寓21-27m², 双人间34m², 三人间56m²
@@ -143,13 +143,6 @@ map
   - 三人合租单间: 290€ - 304€
 - 位置：距离学校5公里，靠近市中心。
 - 地址：Rotenbergstraße 12-14 66111 Saarbrücken
-
-
-> **目前学生宿舍没有空房！**
->
-> Derzeit sind keine freien Zimmer in den Wohnheimen verfügbar!
->
-> ——Wohnen im Wohnheim
 
 
 

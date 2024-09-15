@@ -9,6 +9,7 @@ book:
   chapters:
     - index.qmd
     - stay.qmd
+    - references.qmd
   favicon: https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg
   cover-image: https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg
   repo-url: https://github.com/exusiaiwei/uni-saarland-survival-guide
@@ -26,6 +27,8 @@ book:
             href: https://exusiaiwei.github.io/uni-saarland-survival-guide/en/
           - text: 中文
             href: https://exusiaiwei.github.io/uni-saarland-survival-guide/zh/
+
+bibliography: ../assets/bibliography.bib
 
 format:
   html:
