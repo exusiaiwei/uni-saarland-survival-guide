@@ -5,9 +5,12 @@ project:
 book:
   title: "萨尔大学生存指南"
   author: "魏子超"
-  date: "2024/5/8"
   chapters:
     - index.qmd
+    # Consider adding parts for better structure if chapters increase
+    # - part: "准备篇"
+    #   chapters:
+    #     - intro.qmd
     - stay.qmd
     - references.qmd
   favicon: https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg
@@ -15,6 +18,7 @@ book:
   repo-url: https://github.com/exusiaiwei/uni-saarland-survival-guide
   repo-actions: [edit]
   search: true
+  page-navigation: true # 添加页面导航
   sidebar:
     style: docked
     background: light
@@ -32,11 +36,26 @@ bibliography: ../assets/bibliography.bib
 
 format:
   html:
-    theme: litera
+    theme:
+      - cosmo
+      - guide_style.scss
     code-copy: true
+    code-fold: true  # 允许折叠代码块
     toc: true
     lang: zh
-
+    giscus:
+      repo: exusiaiwei/uni-saarland-survival-guide # 你的仓库
+      repo-id: "R_kgDOL40BXQ"              # 从 Giscus 页面复制
+      category: comment                # 你选定的分类名 (确保是 Announcement 类型)
+      category-id: "DIC_kwDOL40BXc4CpT7Q"         # 从 Giscus 页面复制
+      mapping: pathname
+      strict: 0
+      reactions-enabled: 1
+      emit-metadata: 0
+      input-position: top
+      theme: preferred_color_scheme    # 或 light / dark
+      lang: zh-CN
+      loading: lazy
 
 jupyter:
   kernelspec:

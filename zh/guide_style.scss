@@ -1,0 +1,143 @@
+/* --- 放在文件最顶部 --- */
+// *** 强烈建议：引入 Google Fonts 改善中英文显示 ***
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap');
+
+/*-- scss:defaults --*/
+
+// *** 修改部分：使用 #081d36 的浅色版本作为主色调 ***
+$primary: #3A5E85 !default; // 尝试这个浅蓝色，或 #5F89B8
+// $secondary: #c01f50 !default; // 可以定义一个辅助色，比如洋红色，按需使用
+
+// 基础字号 (保持)
+$font-size-root: 18px !default;
+// 基础行高 (建议添加或调整)
+$body-line-height: 1.7 !default;
+
+// 链接颜色 (如果 $primary 自动生成的不满意，可以覆盖)
+// $link-color: #YOUR_CHOICE;
+// $link-hover-color: darken($link-color, 15%);
+
+/*-- scss:rules --*/
+
+//*** 应用自定义字体 ***
+body {
+    font-family: 'Open Sans', 'Noto Sans SC', sans-serif; /* 英文 Open Sans, 中文 Noto Sans SC */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', 'Noto Sans SC', sans-serif; // 标题也应用
+    // color: #2c3e50; // 可以设置一个明确的深灰色标题颜色 (Flatly 默认正文色)
+                     // 或者让它继承 Flatly 的默认标题色
+}
+
+// 侧边栏标题颜色 (保持)
+.sidebar-title {
+  color: $primary;
+}
+
+// 活动菜单项加粗 (保持)
+div.sidebar-item-container .active {
+  font-weight: bold;
+}
+.sidebar nav[role=doc-toc] ul>li>a.active,
+.sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+  font-weight: bold;
+}
+
+// 移除封面图片阴影 (保持移除状态)
+/* img.quarto-cover-image { ... } */
+
+/* Headings ------------------------------------------------------ */
+// 标题间距、大小、粗细设置 (保持 R4DS 样式)
+#title-block-header.quarto-title-block.default .quarto-title h1.title { margin-bottom: 0.5rem; }
+h2 { margin-top: 2rem; margin-bottom: 1rem; font-size: 1.4rem; font-weight: 600; }
+h3 { margin-top: 1.5em; font-size: 1.2rem; font-weight: 500; }
+h4 { margin-top: 1.5em; font-size: 1.1rem; }
+h5 { margin-top: 1.5em; font-size: 1rem; }
+
+// *** 移除 h1, h2 的强制深蓝设置 ***
+/*
+h1.title, h1, h2 {
+  color: #081d36;
+}
+*/
+
+// 章节编号样式 (保持)
+.quarto-section-identifier { color: #6C6C6C; font-weight: normal; }
+
+/* Code ------------------------------------------------ */
+// 代码样式 (保持 R4DS 样式)
+code { color: #373a3c; }
+code a:any-link { text-decoration: underline; text-decoration-color: #ccc; }
+pre { background-image: linear-gradient(160deg,#f8f8f8 0,#f1f1f1 100%); }
+
+
+/* --- 添加针对指南的自定义样式 --- */
+
+// *** 优化内容区域宽度 ***
+.main-container { // Quarto book 通常使用 .main-container
+    max-width: 900px; // 限制最大宽度，提升阅读体验
+    margin-left: auto !important; // 强制居中
+    margin-right: auto !important;
+}
+// 对于有 margin column 的布局，可能需要调整 body-width
+// body { max-width: 900px; margin: 0 auto; } // 另一种方式，取决于具体模板
+
+// *** 为 Callouts 添加样式 (非常重要!) ***
+.callout {
+    border-radius: 0.25rem;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    border-left-width: 0.25rem;
+    border-left-style: solid;
+}
+.callout-note {
+    border-left-color: $primary; // 使用主色调
+    background-color: lighten($primary, 45%); // 非常浅的主色背景
+}
+.callout-tip {
+    $tip-color: #28a745; // 绿色
+    border-left-color: $tip-color;
+    background-color: lighten($tip-color, 48%);
+}
+.callout-warning {
+    $warning-color: #ffc107; // 黄色
+    border-left-color: $warning-color;
+    background-color: lighten($warning-color, 40%);
+}
+.callout-important {
+    $important-color: #dc3545; // 红色
+    border-left-color: $important-color;
+    background-color: lighten($important-color, 45%);
+}
+// 可以为 Callout 标题添加样式
+.callout .callout-title {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.callout .callout-icon--note::before { color: $primary; }
+.callout .callout-icon--tip::before { color: #28a745; }
+.callout .callout-icon--warning::before { color: #ffc107; }
+.callout .callout-icon--important::before { color: #dc3545; }
+
+
+// *** （可选）基础表格样式 ***
+table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #2c3e50; // Flatly body color
+  border-collapse: collapse;
+}
+th, td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6; // 浅灰边框
+}
+thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+  background-color: #f8f9fa; // 浅灰表头背景
+}
+tbody tr:nth-of-type(odd) {
+   background-color: rgba(0, 0, 0, 0.03); // 斑马条纹
+}
