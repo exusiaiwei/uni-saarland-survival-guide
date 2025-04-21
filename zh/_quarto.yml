@@ -7,13 +7,12 @@ book:
   reader-mode: true
   author: "魏子超"
   chapters:
-    - index.qmd
+    - 主页.qmd
     # Consider adding parts for better structure if chapters increase
     - part: "准备篇"
       chapters:
-        - intro.qmd
         - 住宿.qmd
-    - references.qmd
+    - 参考文献.qmd
   bread-crumbs: true
   favicon: https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg
   repo-url: https://github.com/exusiaiwei/uni-saarland-survival-guide
