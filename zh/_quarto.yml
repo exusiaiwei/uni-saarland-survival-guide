@@ -13,6 +13,7 @@ book:
     - part: "准备篇"
       chapters:
         - 住宿.qmd
+        - 落地交通.qmd
     - 参考文献.qmd
   bread-crumbs: true
   favicon: https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg
