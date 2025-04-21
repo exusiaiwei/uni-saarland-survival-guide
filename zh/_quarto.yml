@@ -4,19 +4,20 @@ project:
 
 book:
   title: "萨尔大学生存指南"
+  reader-mode: true
   author: "魏子超"
   chapters:
     - index.qmd
     # Consider adding parts for better structure if chapters increase
-    # - part: "准备篇"
-    #   chapters:
-    #     - intro.qmd
-    - stay.qmd
+    - part: "准备篇"
+      chapters:
+        - intro.qmd
+        - stay.qmd
     - references.qmd
+  bread-crumbs: true
   favicon: https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg
-  cover-image: https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg
   repo-url: https://github.com/exusiaiwei/uni-saarland-survival-guide
-  repo-actions: [edit]
+  repo-actions: [edit, issue]
   search: true
   page-navigation: true # 添加页面导航
   sidebar:
@@ -25,7 +26,7 @@ book:
   navbar:
     background: primary
     right:
-      - icon: globe
+      - icon: translate
         menu:
           - text: English
             href: https://exusiaiwei.github.io/uni-saarland-survival-guide/en/
@@ -44,6 +45,7 @@ book:
       loading: lazy
 
 
+
 bibliography: ../assets/bibliography.bib
 
 format:
@@ -55,6 +57,7 @@ format:
     code-fold: true  # 允许折叠代码块
     toc: true
     lang: zh
+
 
 jupyter:
   kernelspec:

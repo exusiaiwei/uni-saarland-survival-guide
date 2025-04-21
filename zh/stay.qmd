@@ -1,3 +1,7 @@
+---
+date: last-modified
+---
+
 # 住宿
 
 ```{python}
