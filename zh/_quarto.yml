@@ -9,6 +9,7 @@ book:
   chapters:
     - 主页.qmd
     # Consider adding parts for better structure if chapters increase
+    - 应急联络与电话.qmd
     - part: "准备篇"
       chapters:
         - 住宿.qmd
