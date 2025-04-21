@@ -31,6 +31,18 @@ book:
             href: https://exusiaiwei.github.io/uni-saarland-survival-guide/en/
           - text: 中文
             href: https://exusiaiwei.github.io/uni-saarland-survival-guide/zh/
+  comments:
+    giscus:
+      repo: exusiaiwei/uni-saarland-survival-guide # 你的仓库
+      repo-id: "R_kgDOL40BXQ"              # 从 Giscus 页面复制
+      category: comment                # 你选定的分类名 (确保是 Announcement 类型)
+      category-id: "DIC_kwDOL40BXc4CpT7Q"         # 从 Giscus 页面复制
+      mapping: pathname
+      reactions-enabled: true
+      input-position: top
+      theme: preferred_color_scheme    # 或 light / dark
+      loading: lazy
+
 
 bibliography: ../assets/bibliography.bib
 
@@ -43,19 +55,6 @@ format:
     code-fold: true  # 允许折叠代码块
     toc: true
     lang: zh
-    giscus:
-      repo: exusiaiwei/uni-saarland-survival-guide # 你的仓库
-      repo-id: "R_kgDOL40BXQ"              # 从 Giscus 页面复制
-      category: comment                # 你选定的分类名 (确保是 Announcement 类型)
-      category-id: "DIC_kwDOL40BXc4CpT7Q"         # 从 Giscus 页面复制
-      mapping: pathname
-      strict: 0
-      reactions-enabled: 1
-      emit-metadata: 0
-      input-position: top
-      theme: preferred_color_scheme    # 或 light / dark
-      lang: zh-CN
-      loading: lazy
 
 jupyter:
   kernelspec:
