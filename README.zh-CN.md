@@ -8,9 +8,9 @@
 
 
 [chinese-website-badge]: https://img.shields.io/badge/中文网站-访问-blue?style=for-the-badge&logo=read-the-docs
-[chinese-website-link]: https://academic.exusiaiwei.top/uni-saarland-survival-guide/zh/
+[chinese-website-link]: https://exusiaiwei.github.io/uni-saarland-survival-guide/zh/
 [english-website-badge]: https://img.shields.io/badge/website-visit-blue?style=for-the-badge&logo=read-the-docs
-[english-website-link]: https://academic.exusiaiwei.top/uni-saarland-survival-guide/en
+[english-website-link]: https://exusiaiwei.github.io/uni-saarland-survival-guide/en
 
 </div>
 
