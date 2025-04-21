@@ -12,7 +12,7 @@ book:
     - part: "准备篇"
       chapters:
         - intro.qmd
-        - stay.qmd
+        - 住宿.qmd
     - references.qmd
   bread-crumbs: true
   favicon: https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg
@@ -43,8 +43,6 @@ book:
       input-position: top
       theme: preferred_color_scheme    # 或 light / dark
       loading: lazy
-
-
 
 bibliography: ../assets/bibliography.bib
 

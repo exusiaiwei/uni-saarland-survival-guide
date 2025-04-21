@@ -52,10 +52,10 @@ map
 
 | 宿舍名称 | 类型 | 房型 | 月租金范围 |
 |----------|------|------|------------|
-| Studentenwohnheim E（学生宿舍E） | 学校宿舍 | 单人公寓 (72间) | 370€,包括水电暖 |
+| Studentenwohnheim E（学生宿舍E） | 学校宿舍 | 单人公寓 (72间) | 370€，包括水电暖 |
 | Studentenwohnheim Waldhaus（瓦尔德豪斯学生宿舍） | 学校宿舍 | 单人公寓 (254间), 双人间 (17间), 家庭公寓 (14间) | 309€ - 885€ |
 | Studentenwohnheim Guckelsberg（古克尔斯贝格学生宿舍） | 学校宿舍 | 单人公寓 (46间), 双人公寓 (66间), 家庭公寓 (2间) | 252€ - 750€ |
-| Studentenwohnheim Rotenberg（罗滕贝格学生宿舍） | 学校宿舍 | 单人公寓 (45间), 双人间 (5间), 三人间 (1间) | 275€ - 357€ |
+| Studentenwohnheim Rotenberg（罗滕贝格学生宿舍） | 学校宿舍 | 单人公寓 (45间), 双人间 (5间), 三人间 (1间) | 290€ - 377€ |
 | TILSITER STRASSE 蒂尔西特大街合租公寓 | 私人宿舍 | 单人间 | 310€ - 400€ |
 | CARL-DUISBERG-HAUS 卡尔·杜伊斯堡豪斯 | 私人宿舍 | 单人间, 单间公寓 | 400€ - 430€ |
 | ESG-WOHNHEIM ESG学生公寓 | 私人宿舍 | 单人间, 双人间 | 277€ - 466€ |
@@ -73,10 +73,10 @@ map
 
 萨尔大学管理的学生宿舍主要有四个,分别是:
 
-- [Studentenwohnheim E（学生宿舍E）](#tbl-wohnheim-e) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-E))
-- [Studentenwohnheim Waldhaus（瓦尔德豪斯学生宿舍）](#tbl-waldhaus) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Waldhaus))
-- [Studentenwohnheim Guckelsberg（古克尔斯贝格学生宿舍）](#tbl-guckelsberg) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Guckelsberg))
-- [Studentenwohnheim Rotenberg（罗滕贝格学生宿舍）](#tbl-rotenberg) ([官网](https://www.stw-saarland.de/de/Wohnen/Wohnheime-in-Saarbrucken/Studentenwohnheim-Rotenbergstrasse))
+- [Studentenwohnheim E（学生宿舍E）](#tbl-wohnheim-e) ([官网](https://www.stw-saarland.de/wohnen/studentenwohnheim-e))
+- [Studentenwohnheim Waldhaus（瓦尔德豪斯学生宿舍）](#tbl-waldhaus) ([官网](https://www.stw-saarland.de/wohnen/wohnheim-waldhausweg/))
+- [Studentenwohnheim Guckelsberg（古克尔斯贝格学生宿舍）](#tbl-guckelsberg) ([官网](https://www.stw-saarland.de/wohnen/wohnheim-guckelsberg/))
+- [Studentenwohnheim Rotenberg（罗滕贝格学生宿舍）](#tbl-rotenberg) ([官网](https://www.stw-saarland.de/wohnen/wohnheim-rotenberg/))
 
 ::: {.callout-tip}
 
@@ -93,7 +93,7 @@ map
 
 #### Studentenwohnheim E（学生宿舍E） {#tbl-wohnheim-e}
 
-![学生宿舍E，图源官网](https://www.stw-saarland.de/_cms/1/attachment/12519_260cea850a9495236b1d98a3399e5c02.jpg)
+![学生宿舍E，图源官网](https://www.stw-saarland.de/wp-content/uploads/2024/10/wohnheim_e.webp)
 
 - 房型：单人公寓 (72间)
 - 面积：约20m²
@@ -104,7 +104,7 @@ map
 
 #### Studentenwohnheim Waldhaus（瓦尔德豪斯学生宿舍） {#tbl-waldhaus}
 
-![瓦尔德豪斯学生宿舍，图源官网](https://www.stw-saarland.de/_cms/1/attachment/139_a7444d8ae0b4ddb21678480406b6d41e.jpg)
+![瓦尔德豪斯学生宿舍，图源官网](https://www.stw-saarland.de/wp-content/uploads/2024/10/139_a7444d8ae0b4ddb21678480406b6d41e.jpg)
 
 - 房型：单人公寓 (254间), 双人间 (17间), 家庭公寓 (14间)
 - 面积：单人公寓16m², 双人间32m², 家庭公寓40m² / 80m²
@@ -120,7 +120,7 @@ map
 
 #### Studentenwohnheim Guckelsberg（古克尔斯贝格学生宿舍） {#tbl-guckelsberg}
 
-![古克尔斯贝格学生宿舍，图源官网](https://www.stw-saarland.de/_cms/1/attachment/136_be0f8800316b440edf8bbce2eb9986e4.jpg)
+![古克尔斯贝格学生宿舍，图源官网](https://www.stw-saarland.de/wp-content/uploads/2024/10/guckelsberg.webp)
 
 - 房型：单人公寓 (46间), 双人公寓 (66间), 家庭公寓 (2间)
 - 面积：单人公寓19-35m², 双人公寓29-38m², 家庭公寓57m²
@@ -136,7 +136,7 @@ map
 
 #### Studentenwohnheim Rotenberg（罗滕贝格学生宿舍） {#tbl-rotenberg}
 
-![罗滕贝格学生宿舍，图源官网](https://www.stw-saarland.de/_cms/1/attachment/140_bba2371279d8b0ac8eff5899747237f0.jpg)
+![罗滕贝格学生宿舍，图源官网](https://www.stw-saarland.de/wp-content/uploads/2024/10/wohnheim_rotenbergstrasse.webp)
 
 - 房型：单人公寓 (45间), 双人间 (5间), 三人间 (1间)
 - 面积：单人公寓21-27m², 双人间34m², 三人间56m²
