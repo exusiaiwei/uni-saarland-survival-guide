@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.43">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -38,10 +38,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-21a450200c9897288616ffab44768960.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -193,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div id="c944333c" class="cell" data-execution_count="1">
+<div id="5d1fbcc6" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display" data-execution_count="1">
 <div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -&gt; Trust Notebook</span><iframe srcdoc="<!DOCTYPE html>
 <html>
@@ -222,7 +222,7 @@ ul.task-list li input[type="checkbox"] {
             <meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; />
             <style>
-                #map_e95996cf056a183cabd0c01bf886b2a3 {
+                #map_49cb8bc5cc08d1b62dad7c160cd81c2e {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -236,20 +236,23 @@ ul.task-list li input[type="checkbox"] {
 <body>
     
     
-            <div class=&quot;folium-map&quot; id=&quot;map_e95996cf056a183cabd0c01bf886b2a3&quot; ></div>
+            <div class=&quot;folium-map&quot; id=&quot;map_49cb8bc5cc08d1b62dad7c160cd81c2e&quot; ></div>
         
 </body>
 <script>
     
     
-            var map_e95996cf056a183cabd0c01bf886b2a3 = L.map(
-                &quot;map_e95996cf056a183cabd0c01bf886b2a3&quot;,
+            var map_49cb8bc5cc08d1b62dad7c160cd81c2e = L.map(
+                &quot;map_49cb8bc5cc08d1b62dad7c160cd81c2e&quot;,
                 {
                     center: [49.2554, 7.0419],
                     crs: L.CRS.EPSG3857,
-                    zoom: 12,
-                    zoomControl: true,
-                    preferCanvas: false,
+                    ...{
+  &quot;zoom&quot;: 12,
+  &quot;zoomControl&quot;: true,
+  &quot;preferCanvas&quot;: false,
+}
+
                 }
             );
 
@@ -257,469 +260,649 @@ ul.task-list li input[type="checkbox"] {
 
         
     
-            var tile_layer_312d1ce3e7d27dfc5af5a713b3517e71 = L.tileLayer(
+            var tile_layer_43ac4392a80450fabfe48c02c1f8928f = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
-                {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 19,
+  &quot;maxNativeZoom&quot;: 19,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
             );
         
     
-            tile_layer_312d1ce3e7d27dfc5af5a713b3517e71.addTo(map_e95996cf056a183cabd0c01bf886b2a3);
+            tile_layer_43ac4392a80450fabfe48c02c1f8928f.addTo(map_49cb8bc5cc08d1b62dad7c160cd81c2e);
         
     
-            var marker_27a250a4d2567a52ddd3f9292401ecdf = L.marker(
+            var marker_f98a5a71d1dafcc40ef9507becc8449c = L.marker(
                 [49.2574, 7.0415],
-                {}
-            ).addTo(map_e95996cf056a183cabd0c01bf886b2a3);
+                {
+}
+            ).addTo(map_49cb8bc5cc08d1b62dad7c160cd81c2e);
         
     
-            var icon_2cb32a45936e14c37dd31db1891281ab = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;university&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;darkblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            var icon_6865039a3c43bf3287dbf154e5fd7e4b = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;darkblue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;university&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
             );
-            marker_27a250a4d2567a52ddd3f9292401ecdf.setIcon(icon_2cb32a45936e14c37dd31db1891281ab);
         
     
-        var popup_90bca89ffb7007f572ba13aca3c81fd0 = L.popup({&quot;maxWidth&quot;: 200});
+        var popup_2a5b78c991fcc7c839098d89b07de27a = L.popup({
+  &quot;maxWidth&quot;: 200,
+});
 
         
             
-                var html_2865af9fbb9704ab923d675ffd89cc58 = $(`<div id=&quot;html_2865af9fbb9704ab923d675ffd89cc58&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Wohnheime E</div>`)[0];
-                popup_90bca89ffb7007f572ba13aca3c81fd0.setContent(html_2865af9fbb9704ab923d675ffd89cc58);
+                var html_07fd297fff19adeb89d7abe2b8854d98 = $(`<div id=&quot;html_07fd297fff19adeb89d7abe2b8854d98&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Wohnheime E</div>`)[0];
+                popup_2a5b78c991fcc7c839098d89b07de27a.setContent(html_07fd297fff19adeb89d7abe2b8854d98);
             
         
 
-        marker_27a250a4d2567a52ddd3f9292401ecdf.bindPopup(popup_90bca89ffb7007f572ba13aca3c81fd0)
+        marker_f98a5a71d1dafcc40ef9507becc8449c.bindPopup(popup_2a5b78c991fcc7c839098d89b07de27a)
         ;
 
         
     
     
-            marker_27a250a4d2567a52ddd3f9292401ecdf.bindTooltip(
+            marker_f98a5a71d1dafcc40ef9507becc8449c.bindTooltip(
                 `<div>
                      Click for more information
                  </div>`,
-                {&quot;sticky&quot;: true}
+                {
+  &quot;sticky&quot;: true,
+}
             );
         
     
-            var marker_75b2b894a82d10bf3666744c24be1940 = L.marker(
+                marker_f98a5a71d1dafcc40ef9507becc8449c.setIcon(icon_6865039a3c43bf3287dbf154e5fd7e4b);
+            
+    
+            var marker_aa267ba282828844756b82b81cc3fe2a = L.marker(
                 [49.24489, 7.02133],
-                {}
-            ).addTo(map_e95996cf056a183cabd0c01bf886b2a3);
+                {
+}
+            ).addTo(map_49cb8bc5cc08d1b62dad7c160cd81c2e);
         
     
-            var icon_ea4bab1382292979245e5312140054dc = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;university&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;darkblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            var icon_f256affc5585382d9a3744ead58be446 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;darkblue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;university&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
             );
-            marker_75b2b894a82d10bf3666744c24be1940.setIcon(icon_ea4bab1382292979245e5312140054dc);
         
     
-        var popup_433c1763639ee6bdf4f077a1c19210d2 = L.popup({&quot;maxWidth&quot;: 200});
+        var popup_d0b8d63b729c50479c1fa4e58cd78f00 = L.popup({
+  &quot;maxWidth&quot;: 200,
+});
 
         
             
-                var html_8c076c30251c43a2fae0fe32c25543fb = $(`<div id=&quot;html_8c076c30251c43a2fae0fe32c25543fb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Studentenwohnanlage Waldhaus</div>`)[0];
-                popup_433c1763639ee6bdf4f077a1c19210d2.setContent(html_8c076c30251c43a2fae0fe32c25543fb);
+                var html_cb2c0a8736ac45a189bc96394be7603d = $(`<div id=&quot;html_cb2c0a8736ac45a189bc96394be7603d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Studentenwohnanlage Waldhaus</div>`)[0];
+                popup_d0b8d63b729c50479c1fa4e58cd78f00.setContent(html_cb2c0a8736ac45a189bc96394be7603d);
             
         
 
-        marker_75b2b894a82d10bf3666744c24be1940.bindPopup(popup_433c1763639ee6bdf4f077a1c19210d2)
+        marker_aa267ba282828844756b82b81cc3fe2a.bindPopup(popup_d0b8d63b729c50479c1fa4e58cd78f00)
         ;
 
         
     
     
-            marker_75b2b894a82d10bf3666744c24be1940.bindTooltip(
+            marker_aa267ba282828844756b82b81cc3fe2a.bindTooltip(
                 `<div>
                      Click for more information
                  </div>`,
-                {&quot;sticky&quot;: true}
+                {
+  &quot;sticky&quot;: true,
+}
             );
         
     
-            var marker_0038adac8e51bbb04a48e3d7f82b8fbd = L.marker(
+                marker_aa267ba282828844756b82b81cc3fe2a.setIcon(icon_f256affc5585382d9a3744ead58be446);
+            
+    
+            var marker_370ede221133891c96963fa04dae7579 = L.marker(
                 [49.26539, 7.04053],
-                {}
-            ).addTo(map_e95996cf056a183cabd0c01bf886b2a3);
+                {
+}
+            ).addTo(map_49cb8bc5cc08d1b62dad7c160cd81c2e);
         
     
-            var icon_879f19ebace72aecc9c74847a37cbad4 = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;university&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;darkblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            var icon_326564428a5ab5705c5aa79f6982dc50 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;darkblue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;university&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
             );
-            marker_0038adac8e51bbb04a48e3d7f82b8fbd.setIcon(icon_879f19ebace72aecc9c74847a37cbad4);
         
     
-        var popup_046c8a49b9336ffd2dd82940619ea81e = L.popup({&quot;maxWidth&quot;: 200});
+        var popup_172029b76d1c46302876ba608758137d = L.popup({
+  &quot;maxWidth&quot;: 200,
+});
 
         
             
-                var html_8a10a7d80506f931e6086e3e6566c3f9 = $(`<div id=&quot;html_8a10a7d80506f931e6086e3e6566c3f9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Studentenwohnheim Guckelsberg</div>`)[0];
-                popup_046c8a49b9336ffd2dd82940619ea81e.setContent(html_8a10a7d80506f931e6086e3e6566c3f9);
+                var html_e57e74ba4e3f55042e84758ad343fd3d = $(`<div id=&quot;html_e57e74ba4e3f55042e84758ad343fd3d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Studentenwohnheim Guckelsberg</div>`)[0];
+                popup_172029b76d1c46302876ba608758137d.setContent(html_e57e74ba4e3f55042e84758ad343fd3d);
             
         
 
-        marker_0038adac8e51bbb04a48e3d7f82b8fbd.bindPopup(popup_046c8a49b9336ffd2dd82940619ea81e)
+        marker_370ede221133891c96963fa04dae7579.bindPopup(popup_172029b76d1c46302876ba608758137d)
         ;
 
         
     
     
-            marker_0038adac8e51bbb04a48e3d7f82b8fbd.bindTooltip(
+            marker_370ede221133891c96963fa04dae7579.bindTooltip(
                 `<div>
                      Click for more information
                  </div>`,
-                {&quot;sticky&quot;: true}
+                {
+  &quot;sticky&quot;: true,
+}
             );
         
     
-            var marker_fdca2c1b6674215ccd8ec8a14a315ceb = L.marker(
+                marker_370ede221133891c96963fa04dae7579.setIcon(icon_326564428a5ab5705c5aa79f6982dc50);
+            
+    
+            var marker_f8343bad5a5f68370c53c5e7e5b2bb65 = L.marker(
                 [49.23574, 7.00184],
-                {}
-            ).addTo(map_e95996cf056a183cabd0c01bf886b2a3);
+                {
+}
+            ).addTo(map_49cb8bc5cc08d1b62dad7c160cd81c2e);
         
     
-            var icon_d44f5f3b37071cafb122a9fb81893198 = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;university&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;darkblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            var icon_25a1828e8cfe18bd15059811ad63d5f8 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;darkblue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;university&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
             );
-            marker_fdca2c1b6674215ccd8ec8a14a315ceb.setIcon(icon_d44f5f3b37071cafb122a9fb81893198);
         
     
-        var popup_7f55a592b152a98e90deae3654c975d6 = L.popup({&quot;maxWidth&quot;: 200});
+        var popup_9e1966a60db2c0746e9c69293e643e37 = L.popup({
+  &quot;maxWidth&quot;: 200,
+});
 
         
             
-                var html_94890af0d45f230e9ab6c04e42158ce5 = $(`<div id=&quot;html_94890af0d45f230e9ab6c04e42158ce5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Studentenwohnheim Rotenberg</div>`)[0];
-                popup_7f55a592b152a98e90deae3654c975d6.setContent(html_94890af0d45f230e9ab6c04e42158ce5);
+                var html_0f0dea096a4a6ff65abb34dc1622f2b1 = $(`<div id=&quot;html_0f0dea096a4a6ff65abb34dc1622f2b1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Studentenwohnheim Rotenberg</div>`)[0];
+                popup_9e1966a60db2c0746e9c69293e643e37.setContent(html_0f0dea096a4a6ff65abb34dc1622f2b1);
             
         
 
-        marker_fdca2c1b6674215ccd8ec8a14a315ceb.bindPopup(popup_7f55a592b152a98e90deae3654c975d6)
+        marker_f8343bad5a5f68370c53c5e7e5b2bb65.bindPopup(popup_9e1966a60db2c0746e9c69293e643e37)
         ;
 
         
     
     
-            marker_fdca2c1b6674215ccd8ec8a14a315ceb.bindTooltip(
+            marker_f8343bad5a5f68370c53c5e7e5b2bb65.bindTooltip(
                 `<div>
                      Click for more information
                  </div>`,
-                {&quot;sticky&quot;: true}
+                {
+  &quot;sticky&quot;: true,
+}
             );
         
     
-            var marker_2b757c8bc71fd9b19bc83573946c845e = L.marker(
+                marker_f8343bad5a5f68370c53c5e7e5b2bb65.setIcon(icon_25a1828e8cfe18bd15059811ad63d5f8);
+            
+    
+            var marker_e268fac4fa51fe3587f9af58c4d5e12f = L.marker(
                 [49.23601787263703, 7.048907284661837],
-                {}
-            ).addTo(map_e95996cf056a183cabd0c01bf886b2a3);
+                {
+}
+            ).addTo(map_49cb8bc5cc08d1b62dad7c160cd81c2e);
         
     
-            var icon_3bf90e0af641b19638a23a03de99723e = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;building&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;cadetblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            var icon_baa74cb0da84663c229aa8b745ebd82d = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;cadetblue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;building&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
             );
-            marker_2b757c8bc71fd9b19bc83573946c845e.setIcon(icon_3bf90e0af641b19638a23a03de99723e);
         
     
-        var popup_d460bd4b716739926437b5911f17f3d0 = L.popup({&quot;maxWidth&quot;: 200});
+        var popup_b71499d378ac1e8a67016dfb5c5ee38d = L.popup({
+  &quot;maxWidth&quot;: 200,
+});
 
         
             
-                var html_660dcfe340ce4ae156e561554bafc145 = $(`<div id=&quot;html_660dcfe340ce4ae156e561554bafc145&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>TILSITER STRASSE</div>`)[0];
-                popup_d460bd4b716739926437b5911f17f3d0.setContent(html_660dcfe340ce4ae156e561554bafc145);
+                var html_04014125cd5cfc0e648ade384935e865 = $(`<div id=&quot;html_04014125cd5cfc0e648ade384935e865&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>TILSITER STRASSE</div>`)[0];
+                popup_b71499d378ac1e8a67016dfb5c5ee38d.setContent(html_04014125cd5cfc0e648ade384935e865);
             
         
 
-        marker_2b757c8bc71fd9b19bc83573946c845e.bindPopup(popup_d460bd4b716739926437b5911f17f3d0)
+        marker_e268fac4fa51fe3587f9af58c4d5e12f.bindPopup(popup_b71499d378ac1e8a67016dfb5c5ee38d)
         ;
 
         
     
     
-            marker_2b757c8bc71fd9b19bc83573946c845e.bindTooltip(
+            marker_e268fac4fa51fe3587f9af58c4d5e12f.bindTooltip(
                 `<div>
                      Click for more information
                  </div>`,
-                {&quot;sticky&quot;: true}
+                {
+  &quot;sticky&quot;: true,
+}
             );
         
     
-            var marker_bd63bb566892fe38f60e95f80f1f37d3 = L.marker(
+                marker_e268fac4fa51fe3587f9af58c4d5e12f.setIcon(icon_baa74cb0da84663c229aa8b745ebd82d);
+            
+    
+            var marker_b0e2f51c365b1d80ed49ad98e45996c9 = L.marker(
                 [49.23835064843005, 7.036376055826561],
-                {}
-            ).addTo(map_e95996cf056a183cabd0c01bf886b2a3);
+                {
+}
+            ).addTo(map_49cb8bc5cc08d1b62dad7c160cd81c2e);
         
     
-            var icon_94c37854fd9b47f414b8daf3efdd6179 = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;building&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;cadetblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            var icon_9ce1e5d0ee9e93080cc2f607715e249c = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;cadetblue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;building&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
             );
-            marker_bd63bb566892fe38f60e95f80f1f37d3.setIcon(icon_94c37854fd9b47f414b8daf3efdd6179);
         
     
-        var popup_e8ff26148302bd1ca543b97d8ebd986c = L.popup({&quot;maxWidth&quot;: 200});
+        var popup_41521178d8cdcf032cfe3c8749eb7fe0 = L.popup({
+  &quot;maxWidth&quot;: 200,
+});
 
         
             
-                var html_a4351b4534b96866387b7360aacf6bde = $(`<div id=&quot;html_a4351b4534b96866387b7360aacf6bde&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Carl Duisberg Haus</div>`)[0];
-                popup_e8ff26148302bd1ca543b97d8ebd986c.setContent(html_a4351b4534b96866387b7360aacf6bde);
+                var html_e6bff858c0e2127de1a8aaab5c4ad0e6 = $(`<div id=&quot;html_e6bff858c0e2127de1a8aaab5c4ad0e6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Carl Duisberg Haus</div>`)[0];
+                popup_41521178d8cdcf032cfe3c8749eb7fe0.setContent(html_e6bff858c0e2127de1a8aaab5c4ad0e6);
             
         
 
-        marker_bd63bb566892fe38f60e95f80f1f37d3.bindPopup(popup_e8ff26148302bd1ca543b97d8ebd986c)
+        marker_b0e2f51c365b1d80ed49ad98e45996c9.bindPopup(popup_41521178d8cdcf032cfe3c8749eb7fe0)
         ;
 
         
     
     
-            marker_bd63bb566892fe38f60e95f80f1f37d3.bindTooltip(
+            marker_b0e2f51c365b1d80ed49ad98e45996c9.bindTooltip(
                 `<div>
                      Click for more information
                  </div>`,
-                {&quot;sticky&quot;: true}
+                {
+  &quot;sticky&quot;: true,
+}
             );
         
     
-            var marker_d509b38bdc5377f491906620cd737f23 = L.marker(
+                marker_b0e2f51c365b1d80ed49ad98e45996c9.setIcon(icon_9ce1e5d0ee9e93080cc2f607715e249c);
+            
+    
+            var marker_5feea0b10594aafab1e9b580604d562b = L.marker(
                 [49.24468732847097, 7.018832677740648],
-                {}
-            ).addTo(map_e95996cf056a183cabd0c01bf886b2a3);
+                {
+}
+            ).addTo(map_49cb8bc5cc08d1b62dad7c160cd81c2e);
         
     
-            var icon_b27e70f257aca64456b8302bfe418bb3 = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;building&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;cadetblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            var icon_b2384a108d59618d3d963c79f33d295b = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;cadetblue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;building&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
             );
-            marker_d509b38bdc5377f491906620cd737f23.setIcon(icon_b27e70f257aca64456b8302bfe418bb3);
         
     
-        var popup_ad9a4c3f4bb764025707da1a84622103 = L.popup({&quot;maxWidth&quot;: 200});
+        var popup_ae79b6424d6d2ea340d6fb919114662d = L.popup({
+  &quot;maxWidth&quot;: 200,
+});
 
         
             
-                var html_33f37befb14f39646ebb9548c4786ea8 = $(`<div id=&quot;html_33f37befb14f39646ebb9548c4786ea8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>ESG Saarbrücken</div>`)[0];
-                popup_ad9a4c3f4bb764025707da1a84622103.setContent(html_33f37befb14f39646ebb9548c4786ea8);
+                var html_78c829e09e96879c6a1f27a7d2ab2aca = $(`<div id=&quot;html_78c829e09e96879c6a1f27a7d2ab2aca&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>ESG Saarbrücken</div>`)[0];
+                popup_ae79b6424d6d2ea340d6fb919114662d.setContent(html_78c829e09e96879c6a1f27a7d2ab2aca);
             
         
 
-        marker_d509b38bdc5377f491906620cd737f23.bindPopup(popup_ad9a4c3f4bb764025707da1a84622103)
+        marker_5feea0b10594aafab1e9b580604d562b.bindPopup(popup_ae79b6424d6d2ea340d6fb919114662d)
         ;
 
         
     
     
-            marker_d509b38bdc5377f491906620cd737f23.bindTooltip(
+            marker_5feea0b10594aafab1e9b580604d562b.bindTooltip(
                 `<div>
                      Click for more information
                  </div>`,
-                {&quot;sticky&quot;: true}
+                {
+  &quot;sticky&quot;: true,
+}
             );
         
     
-            var marker_50c924e45a309ae684aaca7734b3f973 = L.marker(
+                marker_5feea0b10594aafab1e9b580604d562b.setIcon(icon_b2384a108d59618d3d963c79f33d295b);
+            
+    
+            var marker_f7b718c2bd4efc9ece5beda3c782afd2 = L.marker(
                 [49.2356132668547, 6.990818476723417],
-                {}
-            ).addTo(map_e95996cf056a183cabd0c01bf886b2a3);
+                {
+}
+            ).addTo(map_49cb8bc5cc08d1b62dad7c160cd81c2e);
         
     
-            var icon_a581e2b033d46cad9c8df3b101f4d7c6 = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;building&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;cadetblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            var icon_3ead0490e1a881be8c9cf7cf7ed8400d = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;cadetblue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;building&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
             );
-            marker_50c924e45a309ae684aaca7734b3f973.setIcon(icon_a581e2b033d46cad9c8df3b101f4d7c6);
         
     
-        var popup_3ce23ac40fab63cda170fda8a8552ab9 = L.popup({&quot;maxWidth&quot;: 200});
+        var popup_82b0d4081c884b674c5ddb5afe7a5a9f = L.popup({
+  &quot;maxWidth&quot;: 200,
+});
 
         
             
-                var html_6588d84cbab6559de56aa818c6e4221f = $(`<div id=&quot;html_6588d84cbab6559de56aa818c6e4221f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Cusanushaus Saarbrücken</div>`)[0];
-                popup_3ce23ac40fab63cda170fda8a8552ab9.setContent(html_6588d84cbab6559de56aa818c6e4221f);
+                var html_34943779e1cfeb84523fa4589c9ca9f6 = $(`<div id=&quot;html_34943779e1cfeb84523fa4589c9ca9f6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Cusanushaus Saarbrücken</div>`)[0];
+                popup_82b0d4081c884b674c5ddb5afe7a5a9f.setContent(html_34943779e1cfeb84523fa4589c9ca9f6);
             
         
 
-        marker_50c924e45a309ae684aaca7734b3f973.bindPopup(popup_3ce23ac40fab63cda170fda8a8552ab9)
+        marker_f7b718c2bd4efc9ece5beda3c782afd2.bindPopup(popup_82b0d4081c884b674c5ddb5afe7a5a9f)
         ;
 
         
     
     
-            marker_50c924e45a309ae684aaca7734b3f973.bindTooltip(
+            marker_f7b718c2bd4efc9ece5beda3c782afd2.bindTooltip(
                 `<div>
                      Click for more information
                  </div>`,
-                {&quot;sticky&quot;: true}
+                {
+  &quot;sticky&quot;: true,
+}
             );
         
     
-            var marker_5b90c43d5550777f94968f96258c3c46 = L.marker(
+                marker_f7b718c2bd4efc9ece5beda3c782afd2.setIcon(icon_3ead0490e1a881be8c9cf7cf7ed8400d);
+            
+    
+            var marker_c95973b732a57bd8f882db69ee334eae = L.marker(
                 [49.24218686964247, 7.007729411047266],
-                {}
-            ).addTo(map_e95996cf056a183cabd0c01bf886b2a3);
+                {
+}
+            ).addTo(map_49cb8bc5cc08d1b62dad7c160cd81c2e);
         
     
-            var icon_36c54b8fb3ed288cb06bbef1e4aa4ffc = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;building&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;cadetblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            var icon_293fa2da394569ea424e3e5fcded9a8f = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;cadetblue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;building&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
             );
-            marker_5b90c43d5550777f94968f96258c3c46.setIcon(icon_36c54b8fb3ed288cb06bbef1e4aa4ffc);
         
     
-        var popup_4b541dcbe564e3a3e308d68c2b48136e = L.popup({&quot;maxWidth&quot;: 200});
+        var popup_c6bc12cf1e85533b07c3958c4cb14e7a = L.popup({
+  &quot;maxWidth&quot;: 200,
+});
 
         
             
-                var html_e3e7b99fe065a9a642bc5629c3ff8c1b = $(`<div id=&quot;html_e3e7b99fe065a9a642bc5629c3ff8c1b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>CAMPO NOVO Saarbrücken</div>`)[0];
-                popup_4b541dcbe564e3a3e308d68c2b48136e.setContent(html_e3e7b99fe065a9a642bc5629c3ff8c1b);
+                var html_6da2dddb0051d9ce8541316087ee7400 = $(`<div id=&quot;html_6da2dddb0051d9ce8541316087ee7400&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>CAMPO NOVO Saarbrücken</div>`)[0];
+                popup_c6bc12cf1e85533b07c3958c4cb14e7a.setContent(html_6da2dddb0051d9ce8541316087ee7400);
             
         
 
-        marker_5b90c43d5550777f94968f96258c3c46.bindPopup(popup_4b541dcbe564e3a3e308d68c2b48136e)
+        marker_c95973b732a57bd8f882db69ee334eae.bindPopup(popup_c6bc12cf1e85533b07c3958c4cb14e7a)
         ;
 
         
     
     
-            marker_5b90c43d5550777f94968f96258c3c46.bindTooltip(
+            marker_c95973b732a57bd8f882db69ee334eae.bindTooltip(
                 `<div>
                      Click for more information
                  </div>`,
-                {&quot;sticky&quot;: true}
+                {
+  &quot;sticky&quot;: true,
+}
             );
         
     
-            var marker_671e5754b12ecf7918f947d9a2f08b9b = L.marker(
+                marker_c95973b732a57bd8f882db69ee334eae.setIcon(icon_293fa2da394569ea424e3e5fcded9a8f);
+            
+    
+            var marker_2238e47cb89010fc4008fbd310708fd3 = L.marker(
                 [49.27712239030715, 7.034571602702453],
-                {}
-            ).addTo(map_e95996cf056a183cabd0c01bf886b2a3);
+                {
+}
+            ).addTo(map_49cb8bc5cc08d1b62dad7c160cd81c2e);
         
     
-            var icon_2de47c6720a5ff975152051ad6b20df9 = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;building&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;cadetblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            var icon_e1e87a2b01702396c8610b3e7fb26f3f = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;cadetblue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;building&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
             );
-            marker_671e5754b12ecf7918f947d9a2f08b9b.setIcon(icon_2de47c6720a5ff975152051ad6b20df9);
         
     
-        var popup_34ffa8bf0b7298833a1cf59661d9d559 = L.popup({&quot;maxWidth&quot;: 200});
+        var popup_cd39a5f73b1914f87787eacf6f6232db = L.popup({
+  &quot;maxWidth&quot;: 200,
+});
 
         
             
-                var html_10a5089a45319a554417db857a887df8 = $(`<div id=&quot;html_10a5089a45319a554417db857a887df8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Quint Immobilien GmbH</div>`)[0];
-                popup_34ffa8bf0b7298833a1cf59661d9d559.setContent(html_10a5089a45319a554417db857a887df8);
+                var html_e3ca117b7038b90936642c65f0a9b733 = $(`<div id=&quot;html_e3ca117b7038b90936642c65f0a9b733&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Quint Immobilien GmbH</div>`)[0];
+                popup_cd39a5f73b1914f87787eacf6f6232db.setContent(html_e3ca117b7038b90936642c65f0a9b733);
             
         
 
-        marker_671e5754b12ecf7918f947d9a2f08b9b.bindPopup(popup_34ffa8bf0b7298833a1cf59661d9d559)
+        marker_2238e47cb89010fc4008fbd310708fd3.bindPopup(popup_cd39a5f73b1914f87787eacf6f6232db)
         ;
 
         
     
     
-            marker_671e5754b12ecf7918f947d9a2f08b9b.bindTooltip(
+            marker_2238e47cb89010fc4008fbd310708fd3.bindTooltip(
                 `<div>
                      Click for more information
                  </div>`,
-                {&quot;sticky&quot;: true}
+                {
+  &quot;sticky&quot;: true,
+}
             );
         
     
-            var marker_f353c3b1659fe44801160b3a26bb8812 = L.marker(
+                marker_2238e47cb89010fc4008fbd310708fd3.setIcon(icon_e1e87a2b01702396c8610b3e7fb26f3f);
+            
+    
+            var marker_cb16f249cccdb03ed23dfc117e9d126e = L.marker(
                 [49.231796028851136, 7.006448137049002],
-                {}
-            ).addTo(map_e95996cf056a183cabd0c01bf886b2a3);
+                {
+}
+            ).addTo(map_49cb8bc5cc08d1b62dad7c160cd81c2e);
         
     
-            var icon_64d6ca530795aa1e9089968a419ead3f = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;building&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;cadetblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            var icon_8e155e650ae28a235c0f8e2c9b882442 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;cadetblue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;building&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
             );
-            marker_f353c3b1659fe44801160b3a26bb8812.setIcon(icon_64d6ca530795aa1e9089968a419ead3f);
         
     
-        var popup_322fff7be7b7e4663ff4994ae401a5e8 = L.popup({&quot;maxWidth&quot;: 200});
+        var popup_28cec480b08a6c699e1290baca92235c = L.popup({
+  &quot;maxWidth&quot;: 200,
+});
 
         
             
-                var html_a9b962c59d7f406026196e9ecb2a88f5 = $(`<div id=&quot;html_a9b962c59d7f406026196e9ecb2a88f5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Zymma</div>`)[0];
-                popup_322fff7be7b7e4663ff4994ae401a5e8.setContent(html_a9b962c59d7f406026196e9ecb2a88f5);
+                var html_2a5e496cdb69aa4e5d2f935ddc279cf3 = $(`<div id=&quot;html_2a5e496cdb69aa4e5d2f935ddc279cf3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Zymma</div>`)[0];
+                popup_28cec480b08a6c699e1290baca92235c.setContent(html_2a5e496cdb69aa4e5d2f935ddc279cf3);
             
         
 
-        marker_f353c3b1659fe44801160b3a26bb8812.bindPopup(popup_322fff7be7b7e4663ff4994ae401a5e8)
+        marker_cb16f249cccdb03ed23dfc117e9d126e.bindPopup(popup_28cec480b08a6c699e1290baca92235c)
         ;
 
         
     
     
-            marker_f353c3b1659fe44801160b3a26bb8812.bindTooltip(
+            marker_cb16f249cccdb03ed23dfc117e9d126e.bindTooltip(
                 `<div>
                      Click for more information
                  </div>`,
-                {&quot;sticky&quot;: true}
+                {
+  &quot;sticky&quot;: true,
+}
             );
         
     
-            var marker_e766ae977773ef0ceff1352b67d19de1 = L.marker(
+                marker_cb16f249cccdb03ed23dfc117e9d126e.setIcon(icon_8e155e650ae28a235c0f8e2c9b882442);
+            
+    
+            var marker_eaf02d31deea22b2c1aa61a7a74c1663 = L.marker(
                 [49.23176489619987, 6.999792006811255],
-                {}
-            ).addTo(map_e95996cf056a183cabd0c01bf886b2a3);
+                {
+}
+            ).addTo(map_49cb8bc5cc08d1b62dad7c160cd81c2e);
         
     
-            var icon_a6224cb122d0fbc76a53f57591a711eb = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;building&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;cadetblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            var icon_01b0c15ece03434b329731323a6b41ee = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;cadetblue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;building&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
             );
-            marker_e766ae977773ef0ceff1352b67d19de1.setIcon(icon_a6224cb122d0fbc76a53f57591a711eb);
         
     
-        var popup_e1501a22de6ee58ff5fe5b3e1e41f258 = L.popup({&quot;maxWidth&quot;: 200});
+        var popup_de832bd910db30fa83017dc43932940f = L.popup({
+  &quot;maxWidth&quot;: 200,
+});
 
         
             
-                var html_1dfe691e4e1bb11499f6f3c18963d374 = $(`<div id=&quot;html_1dfe691e4e1bb11499f6f3c18963d374&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>WOGE Saar</div>`)[0];
-                popup_e1501a22de6ee58ff5fe5b3e1e41f258.setContent(html_1dfe691e4e1bb11499f6f3c18963d374);
+                var html_3738d8f850313b1bbd3d1e4964e813ff = $(`<div id=&quot;html_3738d8f850313b1bbd3d1e4964e813ff&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>WOGE Saar</div>`)[0];
+                popup_de832bd910db30fa83017dc43932940f.setContent(html_3738d8f850313b1bbd3d1e4964e813ff);
             
         
 
-        marker_e766ae977773ef0ceff1352b67d19de1.bindPopup(popup_e1501a22de6ee58ff5fe5b3e1e41f258)
+        marker_eaf02d31deea22b2c1aa61a7a74c1663.bindPopup(popup_de832bd910db30fa83017dc43932940f)
         ;
 
         
     
     
-            marker_e766ae977773ef0ceff1352b67d19de1.bindTooltip(
+            marker_eaf02d31deea22b2c1aa61a7a74c1663.bindTooltip(
                 `<div>
                      Click for more information
                  </div>`,
-                {&quot;sticky&quot;: true}
+                {
+  &quot;sticky&quot;: true,
+}
             );
         
     
-            var marker_acb4df9d858abe44d74332a759ad03e3 = L.marker(
+                marker_eaf02d31deea22b2c1aa61a7a74c1663.setIcon(icon_01b0c15ece03434b329731323a6b41ee);
+            
+    
+            var marker_d771256d697496c114334ec84c68018f = L.marker(
                 [49.23146, 6.973284],
-                {}
-            ).addTo(map_e95996cf056a183cabd0c01bf886b2a3);
+                {
+}
+            ).addTo(map_49cb8bc5cc08d1b62dad7c160cd81c2e);
         
     
-            var icon_849170820ec8afe6a3738bd43ab307a8 = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-0&quot;, &quot;icon&quot;: &quot;building&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;darkblue&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            var icon_14ffc75fe1434872b06f9e271aa822f7 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;darkblue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;building&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
             );
-            marker_acb4df9d858abe44d74332a759ad03e3.setIcon(icon_849170820ec8afe6a3738bd43ab307a8);
         
     
-        var popup_53b4066f9acde106d2a2d883613aae45 = L.popup({&quot;maxWidth&quot;: 200});
+        var popup_f1d715821f9d039b586a0a3bb410e607 = L.popup({
+  &quot;maxWidth&quot;: 200,
+});
 
         
             
-                var html_31d3c125f89978222e652b1168ff225f = $(`<div id=&quot;html_31d3c125f89978222e652b1168ff225f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Study Cubes</div>`)[0];
-                popup_53b4066f9acde106d2a2d883613aae45.setContent(html_31d3c125f89978222e652b1168ff225f);
+                var html_63b7f0ad721504e9638fe71233b38c42 = $(`<div id=&quot;html_63b7f0ad721504e9638fe71233b38c42&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;>Study Cubes</div>`)[0];
+                popup_f1d715821f9d039b586a0a3bb410e607.setContent(html_63b7f0ad721504e9638fe71233b38c42);
             
         
 
-        marker_acb4df9d858abe44d74332a759ad03e3.bindPopup(popup_53b4066f9acde106d2a2d883613aae45)
+        marker_d771256d697496c114334ec84c68018f.bindPopup(popup_f1d715821f9d039b586a0a3bb410e607)
         ;
 
         
     
     
-            marker_acb4df9d858abe44d74332a759ad03e3.bindTooltip(
+            marker_d771256d697496c114334ec84c68018f.bindTooltip(
                 `<div>
                      Click for more information
                  </div>`,
-                {&quot;sticky&quot;: true}
+                {
+  &quot;sticky&quot;: true,
+}
             );
         
+    
+                marker_d771256d697496c114334ec84c68018f.setIcon(icon_14ffc75fe1434872b06f9e271aa822f7);
+            
 </script>
 </html>" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe></div></div>
 </div>
@@ -1138,8 +1321,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -1250,7 +1431,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
