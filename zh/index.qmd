@@ -23,13 +23,7 @@
    
 ::: {.callout-tip}
 
-# 申请和排队时间
+# 注意
 
-学校宿舍需要通过[在线申请地址](https://tl1host.eu/SWSB/#home)进行申请。
-
-学校宿舍的排队时间较长，根据欢迎中心的[信息](https://www.uni-saarland.de/en/global/welcome-center/accommodation/dormitories-studierendenwerk.html)，等待时间通常为1-2个学期。
-
-申请学校宿舍需要注册文件，但是可以进行补交。因此强烈建议在收到录取通知书后立即申请学校宿舍，并在后续系统中上传注册文件。
-
-切记：不要重新申请，重新申请会重置等待列表。
+本提示框将用于注释一些制作团队的个人经验以及部分冷门小知识
 :::
