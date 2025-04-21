@@ -7,7 +7,7 @@ book:
   reader-mode: true
   author: "魏子超"
   chapters:
-    - 主页.qmd
+    - index.qmd
     # Consider adding parts for better structure if chapters increase
     - 应急联络与电话.qmd
     - part: "准备篇"
