@@ -14,6 +14,7 @@ book:
       chapters:
         - 住宿.qmd
         - 落地交通.qmd
+        - 出发前核对清单与注意事项.qmd
     - 参考文献.qmd
   bread-crumbs: true
   favicon: https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg
