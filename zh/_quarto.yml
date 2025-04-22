@@ -10,11 +10,12 @@ book:
     - index.qmd
     # Consider adding parts for better structure if chapters increase
     - 应急联络与电话.qmd
-    - part: "准备篇"
+    - part: "出发前须知"
       chapters:
         - 住宿.qmd
         - 落地交通.qmd
         - 出发前核对清单与注意事项.qmd
+        - 护照与签证申请.qmd
     - 参考文献.qmd
   bread-crumbs: true
   favicon: https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg
@@ -50,6 +51,21 @@ bibliography: ../assets/bibliography.bib
 
 format:
   html:
+  # 新增部分开始
+    include-after-body: 
+      text: |
+        <script>
+          // 允许内联脚本的安全策略
+          document.addEventListener('DOMContentLoaded', function() {
+            if (window.trustedTypes && trustedTypes.createPolicy) {
+              trustedTypes.createPolicy('default', {
+                createHTML: (string) => string,
+                createScript: (string) => string
+              });
+            }
+          });
+        </script>
+    #新增部分结束    
     theme:
       - cosmo
       - guide_style.scss
