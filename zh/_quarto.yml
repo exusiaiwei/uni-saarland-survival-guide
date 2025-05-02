@@ -16,6 +16,14 @@ book:
         - 落地交通.qmd
         - 出发前核对清单与注意事项.qmd
         - 护照与签证申请.qmd
+    - part: "生活"
+      chapters:
+        - 就医、药品与健康需求.qmd
+        - 医疗保险细化指南.qmd
+        - 交通.qmd
+        - 电讯指南.qmd
+        - 经济与金融.qmd
+        - 食品进阶需求.qmd
     - 参考文献.qmd
   bread-crumbs: true
   favicon: https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg
