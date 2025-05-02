@@ -141,3 +141,11 @@ thead th {
 tbody tr:nth-of-type(odd) {
    background-color: rgba(0, 0, 0, 0.03); // 斑马条纹
 }
+
+// *** 为应急联络项添加特殊格式 ***
+h1.emergency {
+  color: #dc3545;
+  font-weight: bold;
+  border-left: 4px solid #dc3545; /* 可选左侧装饰线 */
+  padding-left: 1rem;
+}

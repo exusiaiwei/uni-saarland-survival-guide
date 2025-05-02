@@ -52,7 +52,7 @@
 
 请参考住房部分内容
 
-### 行
+### 出行
 
 1. 您不必在出发前过多考虑本项
 2. 可以参考落地交通部分对于您前往本市的相关描述
@@ -81,8 +81,61 @@
 
 1. 您不需要在出发前考虑此条。当然，如果您有集邮爱好，您可以随意携带任意数量面额的中邮邮票。
 
+### 基础核对清单
 
+<div id="checklist-container">
 
+- [ ] 有效护照与签证
+- [ ] 入学通知书打印件
+- [ ] 医疗保险证明
+- [ ] 住宿确认文件
+- [ ] 欧元现金(建议 500-800€)
+- [ ] 国际信用卡/借记卡
+- [ ] 电子设备及充电器
+- [ ] 转换插头(欧标 Type C)
+- [ ] 基础药品(合规包装)
+- [ ] 适应当地气候的衣物
+- [ ] 重要文件复印件
+
+</div>
+
+<button class="btn-clear" onclick="clearChecklist()">🗑️ 清空所有勾选</button>
+
+```{javascript}
+//| echo: false
+function clearChecklist() {
+  const checkboxes = document.querySelectorAll('#checklist-container input[type="checkbox"]');
+  checkboxes.forEach(checkbox => {
+    checkbox.checked = false;
+    // 触发动画反馈
+    checkbox.parentElement.style.animation = 'shake 0.5s';
+    setTimeout(() => checkbox.parentElement.style.animation = '', 500);
+  });
+}
+
+// 添加 CSS 动画
+document.head.insertAdjacentHTML('beforeend', `
+<style>
+  .btn-clear {
+    padding: 8px 16px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .btn-clear:hover {
+    background: #bb2d3b;
+  }
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+  }
+</style>
+`);
+```
 
 
 
