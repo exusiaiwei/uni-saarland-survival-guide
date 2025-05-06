@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hans" xml:lang="zh-Hans"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.29">
+<meta name="generator" content="quarto-1.7.30">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-514d7b825dd11b11d29751e0ad391164.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -288,7 +288,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>德国铁路的所有快速火车票均参与市场竞争，因此您需要提前规划您的行程。同时，德国铁路普遍不提供座位预定服务，快速铁路需要额外购买此服务。因此，座位遵循先到先得的原则。</p>
+<p>德国铁路的所有快速火车票均参与市场竞争，即： 提前购买、选择非热门时段会降低票价，因此您需要提前规划您的行程。同时，德国铁路普遍不提供座位预定服务。如您乘坐快速铁路希望提前预定座位，需要额外购买此服务。如未预定，空余的座位遵循先到先得的原则（请注意座位上电子显示屏的标记，查看此段是否有人已预定该座位）。</p>
 </div>
 </div>
 <p>我们以慢速火车（RE/RB）为例：</p>
@@ -310,6 +310,19 @@ ul.task-list li input[type="checkbox"] {
 <li>请在上车前再次核对您的车次，终到站。</li>
 </ol>
 <p>若您购买快速火车（ICE/EC/IC/TGV（法国铁路）），您需要前往Frankfurt(M) Flughafen fernbf。除此之外流程一致</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>慢速火车没有专门放置大件行李的设施。在列车拥挤时，可以尝试将行李箱放置在座位底下，或两排方向相反的座椅靠背中间。快速火车通常会有大件行李架。</p>
+</div>
+</div>
 </section>
 <section id="由萨尔布吕肯中央火车站前往您的住所" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="由萨尔布吕肯中央火车站前往您的住所"><span class="header-section-number">2.2</span> 由萨尔布吕肯中央火车站前往您的住所</h2>
@@ -718,30 +731,38 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<script src="https://giscus.app/client.js" data-repo="exusiaiwei/uni-saarland-survival-guide" data-repo-id="R_kgDOL40BXQ" data-category="comment" data-category-id="DIC_kwDOL40BXc4CpT7Q" data-mapping="pathname" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" data-loading="lazy" async="">
-</script>
-<script type="application/javascript">
-  const giscusIframeObserver = new MutationObserver(function (mutations) {
-    mutations.forEach(function (mutation) {
-      mutation.addedNodes.forEach(function (addedNode) {
-        if (addedNode.matches && addedNode.matches('div.giscus')) {
-          const giscusIframe = addedNode.querySelector('iframe.giscus-frame');
-          if(giscusIframe) {
-            giscusIframe.addEventListener("load", function() {
-              window.setTimeout(() => {
-                toggleGiscusIfUsed(hasAlternateSentinel(), authorPrefersDark);
-              }, 100);
-            });
-            giscusIframeObserver.disconnect();
-          }
-        }
-      });
-    });
-  });
-  giscusIframeObserver.observe(document.body, { childList: true, subtree: true });
-</script>
 <input type="hidden" id="giscus-base-theme" value="preferred_color_scheme">
 <input type="hidden" id="giscus-alt-theme" value="preferred_color_scheme">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      if (authorPrefersDark) {
+          [baseTheme, altTheme] = [altTheme, baseTheme];
+      }
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "exusiaiwei/uni-saarland-survival-guide";
+    script.dataset.repoId = "R_kgDOL40BXQ";
+    script.dataset.category = "comment";
+    script.dataset.categoryId = "DIC_kwDOL40BXc4CpT7Q";
+    script.dataset.mapping = "pathname";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./住宿.html" class="pagination-link" aria-label="预确定与应急住宿">
