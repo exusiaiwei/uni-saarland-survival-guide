@@ -7,7 +7,7 @@ book:
   reader-mode: true
   page-footer:
     left: |
-      创作团队：在彼扬水，Zorzaneczka，Joakim
+      创作团队：在彼扬水，Zorzaneczka，Joakim，就不喜欢吃mensa
     right: |
       使用<a href="https://quarto.org/">Quarto</a>构建
   cover-image: LST.png
@@ -86,7 +86,7 @@ format:
     toc: true
     lang: zh
 
-    author-meta: "在彼扬水，Zorzaneczka，Joakim"
+    author-meta: "在彼扬水，Zorzaneczka，Joakim；就不喜欢吃mensa"
     callout-appearance: simple
 
 jupyter:
