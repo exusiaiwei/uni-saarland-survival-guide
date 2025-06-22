@@ -10,7 +10,7 @@ book:
       创作团队：在彼扬水，Zorzaneczka，Joakim
     right: |
       使用<a href="https://quarto.org/">Quarto</a>构建
-  cover-image: lst.png
+  cover-image: LST.png
   chapters:
     - index.qmd
     # Consider adding parts for better structure if chapters increase
