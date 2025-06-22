@@ -1,4 +1,4 @@
-# 出发前核对清单与注意事项 
+# 出发前核对清单与注意事项 {.unnumbered}
 
 ## 海关注意事项
 
@@ -97,45 +97,6 @@
 - [ ] 适应当地气候的衣物
 - [ ] 重要文件复印件
 
-</div>
-
-<button class="btn-clear" onclick="clearChecklist()">🗑️ 清空所有勾选</button>
-
-```{javascript}
-//| echo: false
-function clearChecklist() {
-  const checkboxes = document.querySelectorAll('#checklist-container input[type="checkbox"]');
-  checkboxes.forEach(checkbox => {
-    checkbox.checked = false;
-    // 触发动画反馈
-    checkbox.parentElement.style.animation = 'shake 0.5s';
-    setTimeout(() => checkbox.parentElement.style.animation = '', 500);
-  });
-}
-
-// 添加 CSS 动画
-document.head.insertAdjacentHTML('beforeend', `
-<style>
-  .btn-clear {
-    padding: 8px 16px;
-    background: #dc3545;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  .btn-clear:hover {
-    background: #bb2d3b;
-  }
-  @keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    75% { transform: translateX(5px); }
-  }
-</style>
-`);
-```
 
 
 
