@@ -5,7 +5,12 @@ project:
 book:
   title: "萨尔大学生存指南"
   reader-mode: true
-  author: "在彼扬水，Zorzaneczka，Joakim"
+  page-footer:
+    left: |
+      创作团队：在彼扬水，Zorzaneczka，Joakim
+    right: |
+      使用<a href="https://quarto.org/">Quarto</a>构建
+  cover-image: lst.png
   chapters:
     - index.qmd
     # Consider adding parts for better structure if chapters increase
@@ -33,7 +38,6 @@ book:
   page-navigation: true # 添加页面导航
   sidebar:
     style: docked
-    background: light
   navbar:
     background: primary
     right:
@@ -82,6 +86,8 @@ format:
     toc: true
     lang: zh
 
+    author-meta: "在彼扬水，Zorzaneczka，Joakim"
+    callout-appearance: simple
 
 jupyter:
   kernelspec:
