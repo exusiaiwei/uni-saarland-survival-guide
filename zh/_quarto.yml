@@ -5,7 +5,7 @@ project:
 book:
   title: "萨尔大学生存指南"
   reader-mode: true
-  author: "魏子超"
+  author: "在彼扬水，Zorzaneczka，Joakim"
   chapters:
     - index.qmd
     # Consider adding parts for better structure if chapters increase
@@ -19,10 +19,10 @@ book:
     - part: "生活"
       chapters:
         - 就医、药品与健康需求.qmd
-        - 医疗保险细化指南.qmd
         - 交通.qmd
         - 电讯指南.qmd
         - 经济与金融.qmd
+        - 医疗保险细化指南.qmd
         - 食品进阶需求.qmd
     - 参考文献.qmd
   bread-crumbs: true
@@ -60,7 +60,7 @@ bibliography: ../assets/bibliography.bib
 format:
   html:
   # 新增部分开始
-    include-after-body: 
+    include-after-body:
       text: |
         <script>
           // 允许内联脚本的安全策略
@@ -73,7 +73,7 @@ format:
             }
           });
         </script>
-    #新增部分结束    
+    #新增部分结束
     theme:
       - cosmo
       - guide_style.scss
