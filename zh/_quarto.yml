@@ -41,23 +41,13 @@ book:
         - 护照丢失.qmd
         - 广播电视费.qmd
     - 参考文献.qmd
-  bread-crumbs: true
   favicon: https://www.uni-saarland.de/typo3conf/ext/uni_saarland/Resources/Public/Images/logo_uni_saarland.svg
   repo-url: https://github.com/exusiaiwei/uni-saarland-survival-guide
   repo-actions: [edit, issue]
   search: true
   page-navigation: true # 添加页面导航
   sidebar:
-    style: docked
-  navbar:
-    background: primary
-    right:
-      - icon: translate
-        menu:
-          - text: English
-            href: https://exusiaiwei.github.io/uni-saarland-survival-guide/en/
-          - text: 中文
-            href: https://exusiaiwei.github.io/uni-saarland-survival-guide/zh/
+    style: floating
   comments:
     giscus:
       repo: exusiaiwei/uni-saarland-survival-guide # 你的仓库

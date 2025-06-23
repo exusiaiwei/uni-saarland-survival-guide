@@ -1,151 +1,186 @@
 /* --- 放在文件最顶部 --- */
-// *** 强烈建议：引入 Google Fonts 改善中英文显示 ***
+// *** 保持：引入 Google Fonts 是一个很好的实践 ***
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap');
 
 /*-- scss:defaults --*/
 
-// *** 修改部分：使用 #081d36 的浅色版本作为主色调 ***
+// 【现代化改进】将核心颜色定义为 SCSS 变量，供 SCSS 函数 (如 lighten) 使用
 $primary: #3A5E85 !default; // 尝试这个浅蓝色，或 #5F89B8
 $secondary: #c01f50 !default; // 可以定义一个辅助色，比如洋红色，按需使用
 
-// 基础字号 (保持)
-$font-size-root: 18px !default;
-// 基础行高 (建议添加或调整)
-$body-line-height: 1.7 !default;
 
-// 链接颜色 (如果 $primary 自动生成的不满意，可以覆盖)
-// $link-color: #YOUR_CHOICE;
-// $link-hover-color: darken($link-color, 15%);
+$font-size-root: 18px !default;
+$body-line-height: 1.7 !default;
 
 /*-- scss:rules --*/
 
-//*** 应用自定义字体 ***
+/* 【现代化改进】使用 :root 定义全局 CSS 变量，便于维护和实现动态主题 */
+:root {
+  --primary-color: #{$primary}; /* 将 SCSS 变量传递给 CSS 变量 */
+  --link-color: var(--primary-color);
+  --link-hover-color: #{darken($primary, 10%)};
+  --heading-color: #1d2d3d;
+  --text-color: #333740;
+  --bg-color: #ffffff;
+  --bg-alt-color: #f7f9fc; /* 用于代码块、表格等元素的浅色背景 */
+  --border-color: #dee2e6;
+  --shadow-color: rgba(0, 0, 0, 0.07);
+  --border-radius-small: 4px;
+  --border-radius-medium: 8px;
+}
+
 body {
-    font-family: 'Open Sans', 'Noto Sans SC', sans-serif; /* 英文 Open Sans, 中文 Noto Sans SC */
+    font-family: 'Open Sans', 'Noto Sans SC', sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', 'Noto Sans SC', sans-serif; // 标题也应用
-    // color: #2c3e50; // 可以设置一个明确的深灰色标题颜色 (Flatly 默认正文色)
-                     // 或者让它继承 Flatly 的默认标题色
+    font-family: 'Open Sans', 'Noto Sans SC', sans-serif;
+    color: var(--heading-color);
 }
 
-// 侧边栏标题颜色 (保持)
+/* 【现代化改进】为链接添加平滑的过渡效果 */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+/* --- 侧边栏 --- */
 .sidebar-title {
-  color: $primary;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
-// 活动菜单项加粗 (保持)
+/* 【现代化改进】为激活的侧边栏项目添加更明显的视觉提示 */
+.sidebar nav[role=doc-toc] ul>li>a.active,
+.sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+  color: var(--primary-color);
+  font-weight: 700;
+  border-left: 3px solid var(--primary-color);
+  padding-left: 10px; // 配合边框增加内边距
+}
 div.sidebar-item-container .active {
   font-weight: bold;
 }
-.sidebar nav[role=doc-toc] ul>li>a.active,
-.sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
-  font-weight: bold;
+
+/* 【现代化改进】为封面图片添加圆角和柔和的阴影 */
+img.quarto-cover-image {
+  border-radius: var(--border-radius-medium);
+  box-shadow: 0 4px 15px var(--shadow-color);
+  transition: transform 0.3s ease;
+}
+img.quarto-cover-image:hover {
+    transform: scale(1.03); // 添加轻微的悬浮放大效果
 }
 
-// 移除封面图片阴影 (保持移除状态)
-/* img.quarto-cover-image { ... } */
-
-/* Headings ------------------------------------------------------ */
-// 标题间距、大小、粗细设置 (保持 R4DS 样式)
+/* --- 标题 --- */
 #title-block-header.quarto-title-block.default .quarto-title h1.title { margin-bottom: 0.5rem; }
-h2 { margin-top: 2rem; margin-bottom: 1rem; font-size: 1.4rem; font-weight: 600; }
-h3 { margin-top: 1.5em; font-size: 1.2rem; font-weight: 500; }
+
+/* 【现代化改进】为 h2 添加下划线，作为清晰的章节分隔符 */
+h2 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+h3 { margin-top: 2em; font-size: 1.3rem; font-weight: 600; }
 h4 { margin-top: 1.5em; font-size: 1.1rem; }
 h5 { margin-top: 1.5em; font-size: 1rem; }
+.quarto-section-identifier { color: #888; font-weight: normal; }
 
-// *** 移除 h1, h2 的强制深蓝设置 ***
-/*
-h1.title, h1, h2 {
-  color: #081d36;
+
+/* --- 代码块 --- */
+/* 【现代化改进】为内联代码和代码块提供更现代、清晰的样式 */
+code {
+  color: #c7254e; // 使用更鲜明的代码颜色
+  background-color: var(--bg-alt-color);
+  border-radius: var(--border-radius-small);
+  padding: 0.2em 0.4em;
+  font-size: 0.9em;
 }
-*/
-
-// 章节编号样式 (保持)
-.quarto-section-identifier { color: #6C6C6C; font-weight: normal; }
-
-/* Code ------------------------------------------------ */
-// 代码样式 (保持 R4DS 样式)
-code { color: #373a3c; }
 code a:any-link { text-decoration: underline; text-decoration-color: #ccc; }
-pre { background-image: linear-gradient(160deg,#f8f8f8 0,#f1f1f1 100%); }
 
-
-/* --- 添加针对指南的自定义样式 --- */
-
-// *** 优化内容区域宽度 ***
-.main-container { // Quarto book 通常使用 .main-container
-    max-width: 900px; // 限制最大宽度，提升阅读体验
-    margin-left: auto !important; // 强制居中
-    margin-right: auto !important;
+pre {
+  background-color: var(--bg-alt-color); // 替换渐变背景为纯色
+  border-radius: var(--border-radius-medium);
+  border: 1px solid var(--border-color);
+  padding: 1em;
+  box-shadow: 0 2px 5px var(--shadow-color);
 }
-// 对于有 margin column 的布局，可能需要调整 body-width
-// body { max-width: 900px; margin: 0 auto; } // 另一种方式，取决于具体模板
+pre code {
+    background-color: transparent; // 代码块内的 code 标签背景设为透明
+    color: inherit;
+    font-size: inherit;
+    padding: 0;
+}
 
-// *** 为 Callouts 添加样式 (非常重要!) ***
+
+/* --- 自定义区域 --- */
+// 优化内容区域宽度 (保持)
+.main-container { max-width: 900px; margin-left: auto !important; margin-right: auto !important; }
+
+/* 【现代化改进】为 Callouts 添加圆角和阴影，使其更突出 */
 .callout {
-    border-radius: 0.25rem;
+    border-radius: var(--border-radius-medium);
     padding: 1.25rem;
     margin-bottom: 1rem;
-    border-left-width: 0.25rem;
+    border-left-width: 0.3rem;
     border-left-style: solid;
+    box-shadow: 0 2px 8px var(--shadow-color);
 }
+// 保持您已有的颜色逻辑，它们很棒
 .callout-note {
-    border-left-color: $primary; // 使用主色调
-    background-color: lighten($primary, 45%); // 非常浅的主色背景
+    border-left-color: $primary;
+    background-color: lighten($primary, 48%);
 }
-.callout-tip {
-    $tip-color: #28a745; // 绿色
-    border-left-color: $tip-color;
-    background-color: lighten($tip-color, 48%);
-}
-.callout-warning {
-    $warning-color: #ffc107; // 黄色
-    border-left-color: $warning-color;
-    background-color: lighten($warning-color, 40%);
-}
-.callout-important {
-    $important-color: #dc3545; // 红色
-    border-left-color: $important-color;
-    background-color: lighten($important-color, 45%);
-}
-// 可以为 Callout 标题添加样式
-.callout .callout-title {
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-}
+.callout-tip, .callout-icon--tip::before { $tip-color: #28a745; border-left-color: $tip-color; background-color: lighten($tip-color, 50%); .callout-icon--tip::before {color: $tip-color;} }
+.callout-warning, .callout-icon--warning::before { $warning-color: #ffc107; border-left-color: $warning-color; background-color: lighten($warning-color, 42%); .callout-icon--warning::before {color: $warning-color;} }
+.callout-important, .callout-icon--important::before { $important-color: #dc3545; border-left-color: $important-color; background-color: lighten($important-color, 48%); .callout-icon--important::before {color: $important-color;} }
+.callout .callout-title { margin-bottom: 0.5rem; font-weight: bold; }
 .callout .callout-icon--note::before { color: $primary; }
-.callout .callout-icon--tip::before { color: #28a745; }
-.callout .callout-icon--warning::before { color: #ffc107; }
-.callout .callout-icon--important::before { color: #dc3545; }
 
 
-// *** （可选）基础表格样式 ***
+/* 【现代化改进】表格样式优化 */
 table {
   width: 100%;
-  margin-bottom: 1rem;
-  color: #2c3e50; // Flatly body color
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
   border-collapse: collapse;
+  border-radius: var(--border-radius-medium); // 为表格添加圆角
+  overflow: hidden; // 配合圆角，隐藏溢出的边框
+  box-shadow: 0 2px 8px var(--shadow-color);
 }
 th, td {
-  padding: 0.75rem;
+  padding: 0.8rem 1rem;
   vertical-align: top;
-  border-top: 1px solid #dee2e6; // 浅灰边框
+  border-top: 1px solid var(--border-color);
 }
 thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
-  background-color: #f8f9fa; // 浅灰表头背景
+  border-bottom: 2px solid var(--border-color);
+  background-color: var(--bg-alt-color);
+  font-weight: 600;
 }
 tbody tr:nth-of-type(odd) {
-   background-color: rgba(0, 0, 0, 0.03); // 斑马条纹
+   background-color: rgba(0, 0, 0, 0.02); // 使用更淡的斑马条纹
+}
+tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.04); // 添加悬浮高亮效果
 }
 
-// *** 为应急联络项添加特殊格式 ***
+// 应急联络项样式 (保持)
 h1.emergency {
   color: #dc3545;
   font-weight: bold;
-  border-left: 4px solid #dc3545; /* 可选左侧装饰线 */
+  border-left: 4px solid #dc3545;
   padding-left: 1rem;
 }
